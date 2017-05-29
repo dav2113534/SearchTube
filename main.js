@@ -1,4 +1,12 @@
-// var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
+var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
+
+
+
+
+
+
+
+
 
 //add a zip code search bar to find events near a 50 mile
 //radius 

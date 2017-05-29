@@ -1,1490 +1,1019 @@
-var state = [{
+var state = {
     "Alternative": [{
-            "name": "Alternative comedy",
-            "url": "https://en.wikipedia.org/wiki/Alternative_comedy",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Alternative comedy"
         },
         {
-            "name": "Alexei Sayle",
-            "url": "https://en.wikipedia.org/wiki/Alexei_Sayle",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Alexei Sayle"
         },
         {
-            "name": "Mark Steel",
-            "url": "https://en.wikipedia.org/wiki/Mark_Steel",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Mark Steel"
         },
         {
-            "name": "Dan Harmon",
-            "url": "https://en.wikipedia.org/wiki/Dan_Harmon",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Dan Harmon"
         },
         {
-            "name": "Dave Gorman",
-            "url": "https://en.wikipedia.org/wiki/Dave_Gorman",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Dave Gorman"
         },
         {
-            "name": "Linda Smith",
-            "url": "https://en.wikipedia.org/wiki/Linda_Smith_(comedian)",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Linda Smith"
         },
         {
-            "name": "Jeremy Hardy",
-            "url": "https://en.wikipedia.org/wiki/Jeremy_Hardy",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Jeremy Hardy"
         },
         {
-            "name": "Ron Sparks",
-            "url": "https://en.wikipedia.org/wiki/Ron_Sparks_(comedian)",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Ron Sparks"
         },
         {
-            "name": "Alan Davies",
-            "url": "https://en.wikipedia.org/wiki/Alan_Davies",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Alan Davies"
         },
         {
-            "name": "Ben Elton",
-            "url": "https://en.wikipedia.org/wiki/Ben_Elton",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Ben Elton"
         },
         {
-            "name": "Jo Brand",
-            "url": "https://en.wikipedia.org/wiki/Jo_Brand",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Jo Brand"
         },
         {
-            "name": "Stewart Lee",
-            "url": "https://en.wikipedia.org/wiki/Stewart_Lee",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Stewart Lee"
         },
         {
-            "name": "Sean Hughes",
-            "url": "https://en.wikipedia.org/wiki/Sean_Hughes_(comedian)",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Sean Hughes"
         },
         {
-            "name": "Rik Mayall",
-            "url": "https://en.wikipedia.org/wiki/Rik_Mayall",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Rik Mayall"
         },
         {
-            "name": "Adrian Edmonson",
-            "url": "https://en.wikipedia.org/wiki/Adrian_Edmonson",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Adrian Edmonson"
         },
         {
-            "name": "Malcolm Hardee",
-            "url": "https://en.wikipedia.org/wiki/Malcolm_Hardee",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Malcolm Hardee"
         },
         {
-            "name": "Kristen Schaal",
-            "url": "https://en.wikipedia.org/wiki/Kristen_Schaal",
-            "selection2": "Bob Saget",
-            "selection2_url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Kristen Schaal"
         }
     ],
     "Ancedotal": [{
-            "name": "Anecdotal comedy"
+            "name": "Kevin Hart"
         },
         {
-            "name": "[1]"
+            "name": "Louis CK"
         },
         {
-            "name": "anecdote"
+            "name": "Patrice O'Neal"
         },
         {
-            "name": "[1]"
+            "name": "Russell Peter"
         },
         {
-            "name": "Kevin Hart",
-            "url": "https://en.wikipedia.org/wiki/Kevin_Hart"
+            "name": "Aries Spears"
         },
         {
-            "name": "Louis CK",
-            "url": "https://en.wikipedia.org/wiki/Louis_C.K."
+            "name": "Hannibal Buress"
         },
         {
-            "name": "Patrice O'Neal",
-            "url": "https://en.wikipedia.org/wiki/Patrice_O%27Neal"
+            "name": "Deon Cole"
         },
         {
-            "name": "Russell Peter",
-            "url": "https://en.wikipedia.org/wiki/Russell_Peters"
+            "name": "John Mulaney"
         },
         {
-            "name": "Aries Spears",
-            "url": "https://en.wikipedia.org/wiki/Aries_Spears"
+            "name": "Bill Burr"
         },
         {
-            "name": "Hannibal Buress",
-            "url": "https://en.wikipedia.org/wiki/Hannibal_Buress"
+            "name": "Roy Wood, Jr."
         },
         {
-            "name": "Deon Cole",
-            "url": "https://en.wikipedia.org/wiki/Deon_Cole"
+            "name": "Dave Chappelle"
         },
         {
-            "name": "John Mulaney",
-            "url": "https://en.wikipedia.org/wiki/John_Mulaney"
+            "name": "Cedric The Entertainer"
         },
         {
-            "name": "Bill Burr",
-            "url": "https://en.wikipedia.org/wiki/Bill_Burr"
+            "name": "Bernie Mac"
         },
         {
-            "name": "Roy Wood, Jr.",
-            "url": "https://en.wikipedia.org/wiki/Roy_Wood_Jr."
+            "name": "Gabriel Iglesias"
         },
         {
-            "name": "Dave Chappelle",
-            "url": "https://en.wikipedia.org/wiki/Dave_Chappelle"
+            "name": "Alonzo Bodden"
         },
         {
-            "name": "Cedric The Entertainer",
-            "url": "https://en.wikipedia.org/wiki/Cedric_the_Entertainer"
+            "name": "D.L. Hughley"
         },
         {
-            "name": "Bernie Mac",
-            "url": "https://en.wikipedia.org/wiki/Bernie_Mac"
+            "name": "Jamie Foxx"
         },
         {
-            "name": "Gabriel Iglesias",
-            "url": "https://en.wikipedia.org/wiki/Gabriel_Iglesias"
+            "name": "Eddie Griffin"
         },
         {
-            "name": "Alonzo Bodden",
-            "url": "https://en.wikipedia.org/wiki/Alonzo_Bodden"
+            "name": "Patton Oswalt"
         },
         {
-            "name": "D.L. Hughley",
-            "url": "https://en.wikipedia.org/wiki/D._L._Hughley"
+            "name": "Jim Gaffigan"
         },
         {
-            "name": "Jamie Foxx",
-            "url": "https://en.wikipedia.org/wiki/Jamie_Foxx"
+            "name": "Tom Segura"
         },
         {
-            "name": "Eddie Griffin",
-            "url": "https://en.wikipedia.org/wiki/Eddie_Griffin"
-        },
-        {
-            "name": "Patton Oswalt",
-            "url": "https://en.wikipedia.org/wiki/Patton_Oswalt"
-        },
-        {
-            "name": "Jim Gaffigan",
-            "url": "https://en.wikipedia.org/wiki/Jim_Gaffigan"
-        },
-        {
-            "name": "Tom Segura",
-            "url": "https://en.wikipedia.org/wiki/Tom_Segura"
-        },
-        {
-            "name": "Chris Rock",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rock"
+            "name": "Chris Rock"
         },
         {
             "name": "[2]"
         }
     ],
     "Black": [{
-            "name": "Black comedy",
-            "url": "https://en.wikipedia.org/wiki/Black_comedy"
+            "name": "Black comedy"
         },
         {
-            "name": "death",
-            "url": "https://en.wikipedia.org/wiki/Death"
+            "name": "death"
         },
         {
-            "name": "drugs",
-            "url": "https://en.wikipedia.org/wiki/Drugs"
+            "name": "drugs"
         },
         {
-            "name": "terrorism",
-            "url": "https://en.wikipedia.org/wiki/Terrorism"
+            "name": "terrorism"
         },
         {
-            "name": "rape",
-            "url": "https://en.wikipedia.org/wiki/Rape"
+            "name": "rape"
         },
         {
-            "name": "war",
-            "url": "https://en.wikipedia.org/wiki/War"
+            "name": "war"
         },
         {
-            "name": "horror",
-            "url": "https://en.wikipedia.org/wiki/Horror_(genre)"
+            "name": "horror"
         },
         {
-            "name": "Coen brothers",
-            "url": "https://en.wikipedia.org/wiki/Coen_brothers"
+            "name": "Coen brothers"
         },
         {
-            "name": "Jim Norton",
-            "url": "https://en.wikipedia.org/wiki/Jim_Norton_(American_comedian)"
+            "name": "Jim Norton"
         },
         {
-            "name": "Lenny Bruce",
-            "url": "https://en.wikipedia.org/wiki/Lenny_Bruce"
+            "name": "Lenny Bruce"
         },
         {
-            "name": "Bill Hicks",
-            "url": "https://en.wikipedia.org/wiki/Bill_Hicks"
+            "name": "Bill Hicks"
         },
         {
-            "name": "Frankie Boyle",
-            "url": "https://en.wikipedia.org/wiki/Frankie_Boyle"
+            "name": "Frankie Boyle"
         },
         {
-            "name": "Jimmy Carr",
-            "url": "https://en.wikipedia.org/wiki/Jimmy_Carr"
+            "name": "Jimmy Carr"
         },
         {
-            "name": "Louis C.K.",
-            "url": "https://en.wikipedia.org/wiki/Louis_C.K."
+            "name": "Louis C.K."
         },
         {
-            "name": "Denis Leary",
-            "url": "https://en.wikipedia.org/wiki/Denis_Leary"
+            "name": "Denis Leary"
         },
         {
-            "name": "Richard Pryor",
-            "url": "https://en.wikipedia.org/wiki/Richard_Pryor"
+            "name": "Richard Pryor"
         },
         {
-            "name": "Ricky Gervais",
-            "url": "https://en.wikipedia.org/wiki/Ricky_Gervais"
+            "name": "Ricky Gervais"
         },
         {
-            "name": "George Carlin",
-            "url": "https://en.wikipedia.org/wiki/George_Carlin"
+            "name": "George Carlin"
         },
         {
-            "name": "Chris Rush",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rush"
+            "name": "Chris Rush"
         },
         {
-            "name": "Mike Ward",
-            "url": "https://en.wikipedia.org/wiki/Mike_Ward_(comedian)"
+            "name": "Mike Ward"
         },
         {
-            "name": "Penn & Teller",
-            "url": "https://en.wikipedia.org/wiki/Penn_%26_Teller"
+            "name": "Penn & Teller"
         },
         {
-            "name": "Seth MacFarlane",
-            "url": "https://en.wikipedia.org/wiki/Seth_MacFarlane"
+            "name": "Seth MacFarlane"
         },
         {
-            "name": "Christopher Titus",
-            "url": "https://en.wikipedia.org/wiki/Christopher_Titus"
+            "name": "Christopher Titus"
         },
         {
-            "name": "Sacha Baron Cohen",
-            "url": "https://en.wikipedia.org/wiki/Sacha_Baron_Cohen"
+            "name": "Sacha Baron Cohen"
         },
         {
-            "name": "Trey Parker",
-            "url": "https://en.wikipedia.org/wiki/Trey_Parker"
+            "name": "Trey Parker"
         },
         {
-            "name": "Matt Stone",
-            "url": "https://en.wikipedia.org/wiki/Matt_Stone"
+            "name": "Matt Stone"
         },
         {
-            "name": "Quentin Tarantino",
-            "url": "https://en.wikipedia.org/wiki/Quentin_Tarantino"
+            "name": "Quentin Tarantino"
         },
         {
-            "name": "David Cross",
-            "url": "https://en.wikipedia.org/wiki/David_Cross"
+            "name": "David Cross"
         },
         {
-            "name": "Peter Kay",
-            "url": "https://en.wikipedia.org/wiki/Peter_Kay"
+            "name": "Peter Kay"
         },
         {
-            "name": "Anthony Jeselnik",
-            "url": "https://en.wikipedia.org/wiki/Anthony_Jeselnik"
+            "name": "Anthony Jeselnik"
         },
         {
-            "name": "Bill Cosby",
-            "url": "https://en.wikipedia.org/wiki/Bill_Cosby"
+            "name": "Bill Cosby"
         },
         {
-            "name": "Seth Rogen",
-            "url": "https://en.wikipedia.org/wiki/Seth_Rogen"
+            "name": "Seth Rogen"
         },
         {
-            "name": "Evan Goldberg",
-            "url": "https://en.wikipedia.org/wiki/Evan_Goldberg"
+            "name": "Evan Goldberg"
         }
     ],
     "Blue": [{
-            "name": "Blue comedy",
-            "url": "https://en.wikipedia.org/wiki/Blue_comedy"
+            "name": "Blue comedy"
         },
         {
-            "name": "risqué",
-            "url": "https://en.wikipedia.org/wiki/Risqu%C3%A9_(disambiguation)"
+            "name": "risqué"
         },
         {
-            "name": "Roy 'Chubby' Brown",
-            "url": "https://en.wikipedia.org/wiki/Roy_%27Chubby%27_Brown"
+            "name": "Roy 'Chubby' Brown"
         },
         {
-            "name": "Jim Davidson",
-            "url": "https://en.wikipedia.org/wiki/Jim_Davidson"
+            "name": "Jim Davidson"
         },
         {
-            "name": "Frankie Boyle",
-            "url": "https://en.wikipedia.org/wiki/Frankie_Boyle"
+            "name": "Frankie Boyle"
         },
         {
-            "name": "Eddie Murphy",
-            "url": "https://en.wikipedia.org/wiki/Eddie_Murphy"
+            "name": "Eddie Murphy"
         },
         {
-            "name": "Bernard Manning",
-            "url": "https://en.wikipedia.org/wiki/Bernard_Manning"
+            "name": "Bernard Manning"
         },
         {
-            "name": "Martin Lawrence",
-            "url": "https://en.wikipedia.org/wiki/Martin_Lawrence"
+            "name": "Martin Lawrence"
         },
         {
-            "name": "George Lopez",
-            "url": "https://en.wikipedia.org/wiki/George_Lopez"
+            "name": "George Lopez"
         },
         {
-            "name": "Doug Stanhope",
-            "url": "https://en.wikipedia.org/wiki/Doug_Stanhope"
+            "name": "Doug Stanhope"
         },
         {
-            "name": "Seth MacFarlane",
-            "url": "https://en.wikipedia.org/wiki/Seth_MacFarlane"
+            "name": "Seth MacFarlane"
         },
         {
-            "name": "Redd Foxx",
-            "url": "https://en.wikipedia.org/wiki/Redd_Foxx"
+            "name": "Redd Foxx"
         },
         {
-            "name": "Bob Saget",
-            "url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Bob Saget"
         },
         {
-            "name": "Ron White",
-            "url": "https://en.wikipedia.org/wiki/Ron_White"
+            "name": "Ron White"
         },
         {
-            "name": "Dave Attell",
-            "url": "https://en.wikipedia.org/wiki/Dave_Attell"
+            "name": "Dave Attell"
         },
         {
-            "name": "Chris Rock",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rock"
+            "name": "Chris Rock"
         },
         {
-            "name": "Sarah Silverman",
-            "url": "https://en.wikipedia.org/wiki/Sarah_Silverman"
+            "name": "Sarah Silverman"
         },
         {
-            "name": "Chappelle's Show",
-            "url": "https://en.wikipedia.org/wiki/Chappelle%27s_Show"
+            "name": "Chappelle's Show"
         },
         {
-            "name": "Jim Jefferies",
-            "url": "https://en.wikipedia.org/wiki/Jim_Jefferies_(comedian)"
+            "name": "Jim Jefferies"
         }
     ],
     "Character": [{
-            "name": "Character comedy",
-            "url": "https://en.wikipedia.org/wiki/Character_comedy"
+            "name": "Phyllis Diller"
         },
         {
-            "name": "stereotypes",
-            "url": "https://en.wikipedia.org/wiki/Stereotype"
+            "name": "Andy Kaufman"
         },
         {
-            "name": "Phyllis Diller",
-            "url": "https://en.wikipedia.org/wiki/Phyllis_Diller"
+            "name": "Bob Nelson"
         },
         {
-            "name": "Andy Kaufman",
-            "url": "https://en.wikipedia.org/wiki/Andy_Kaufman"
+            "name": "Catherine Tate"
         },
         {
-            "name": "Bob Nelson",
-            "url": "https://en.wikipedia.org/wiki/Bob_Nelson_(comedian)"
+            "name": "Paul Eddington"
         },
         {
-            "name": "Catherine Tate",
-            "url": "https://en.wikipedia.org/wiki/Catherine_Tate"
+            "name": "Andrew Dice Clay"
         },
         {
-            "name": "Paul Eddington",
-            "url": "https://en.wikipedia.org/wiki/Paul_Eddington"
+            "name": "Rich Hall"
         },
         {
-            "name": "Andrew Dice Clay",
-            "url": "https://en.wikipedia.org/wiki/Andrew_Dice_Clay"
+            "name": "Tim Allen"
         },
         {
-            "name": "Rich Hall",
-            "url": "https://en.wikipedia.org/wiki/Rich_Hall"
+            "name": "John Gordon Sinclair"
         },
         {
-            "name": "Tim Allen",
-            "url": "https://en.wikipedia.org/wiki/Tim_Allen"
+            "name": "Lenny Henry"
         },
         {
-            "name": "John Gordon Sinclair",
-            "url": "https://en.wikipedia.org/wiki/John_Gordon_Sinclair"
+            "name": "Sacha Baron Cohen"
         },
         {
-            "name": "Lenny Henry",
-            "url": "https://en.wikipedia.org/wiki/Lenny_Henry"
+            "name": "Christopher Ryan"
         },
         {
-            "name": "Sacha Baron Cohen",
-            "url": "https://en.wikipedia.org/wiki/Sacha_Baron_Cohen"
+            "name": "Steve Guttenberg"
         },
         {
-            "name": "Christopher Ryan",
-            "url": "https://en.wikipedia.org/wiki/Christopher_Ryan"
+            "name": "Jerry Sadowitz"
         },
         {
-            "name": "Steve Guttenberg",
-            "url": "https://en.wikipedia.org/wiki/Steve_Guttenberg"
+            "name": "Steve Coogan"
         },
         {
-            "name": "Jerry Sadowitz",
-            "url": "https://en.wikipedia.org/wiki/Jerry_Sadowitz"
+            "name": "Bip"
         },
         {
-            "name": "Steve Coogan",
-            "url": "https://en.wikipedia.org/wiki/Steve_Coogan"
+            "name": "Jay London"
         },
         {
-            "name": "Bip",
-            "url": "https://en.wikipedia.org/wiki/Marcel_Marceau"
+            "name": "Larry the Cable Guy"
         },
         {
-            "name": "Jay London",
-            "url": "https://en.wikipedia.org/wiki/Jay_London"
+            "name": "Sarah Silverman"
         },
         {
-            "name": "Larry the Cable Guy",
-            "url": "https://en.wikipedia.org/wiki/Larry_the_Cable_Guy"
+            "name": "Rob Brydon"
         },
         {
-            "name": "Sarah Silverman",
-            "url": "https://en.wikipedia.org/wiki/Sarah_Silverman"
+            "name": "Rowan Atkinson"
         },
         {
-            "name": "Rob Brydon",
-            "url": "https://en.wikipedia.org/wiki/Rob_Brydon"
+            "name": "Peter Helliar"
         },
         {
-            "name": "Rowan Atkinson",
-            "url": "https://en.wikipedia.org/wiki/Rowan_Atkinson"
+            "name": "Harry Enfield"
         },
         {
-            "name": "Peter Helliar",
-            "url": "https://en.wikipedia.org/wiki/Peter_Helliar"
+            "name": "Margaret Cho"
         },
         {
-            "name": "Harry Enfield",
-            "url": "https://en.wikipedia.org/wiki/Harry_Enfield"
+            "name": "Little Britain"
         },
         {
-            "name": "Margaret Cho",
-            "url": "https://en.wikipedia.org/wiki/Margaret_Cho"
+            "name": "Stephen Colbert"
         },
         {
-            "name": "Little Britain",
-            "url": "https://en.wikipedia.org/wiki/Little_Britain"
+            "name": "Al Murray"
         },
         {
-            "name": "Stephen Colbert",
-            "url": "https://en.wikipedia.org/wiki/Stephen_Colbert"
+            "name": "Paul Whitehouse"
         },
         {
-            "name": "Al Murray",
-            "url": "https://en.wikipedia.org/wiki/Al_Murray"
+            "name": "Charlie Higson"
         },
         {
-            "name": "Paul Whitehouse",
-            "url": "https://en.wikipedia.org/wiki/Paul_Whitehouse"
+            "name": "Kevin Hart"
         },
         {
-            "name": "Charlie Higson",
-            "url": "https://en.wikipedia.org/wiki/Charlie_Higson"
-        },
-        {
-            "name": "Kevin Hart",
-            "url": "https://en.wikipedia.org/wiki/Kevin_Hart"
-        },
-        {
-            "name": "Vadivelu",
-            "url": "https://en.wikipedia.org/wiki/Vadivelu"
+            "name": "Vadivelu"
         }
     ],
     "Deadpan": [{
-            "name": "Deadpan",
-            "url": "https://en.wikipedia.org/wiki/Deadpan"
+            "name": "Milton Jones"
         },
         {
-            "name": "Milton Jones",
-            "url": "https://en.wikipedia.org/wiki/Milton_Jones"
+            "name": "Jack Dee"
         },
         {
-            "name": "Jack Dee",
-            "url": "https://en.wikipedia.org/wiki/Jack_Dee"
+            "name": "Bob Newhart"
         },
         {
-            "name": "Bob Newhart",
-            "url": "https://en.wikipedia.org/wiki/Bob_Newhart"
+            "name": "Jimmy Carr"
         },
         {
-            "name": "Jimmy Carr",
-            "url": "https://en.wikipedia.org/wiki/Jimmy_Carr"
+            "name": "Steven Wright"
         },
         {
-            "name": "Steven Wright",
-            "url": "https://en.wikipedia.org/wiki/Steven_Wright"
+            "name": "Peter Cook"
         },
         {
-            "name": "Peter Cook",
-            "url": "https://en.wikipedia.org/wiki/Peter_Cook"
+            "name": "Craig Ferguson"
         },
         {
-            "name": "Craig Ferguson",
-            "url": "https://en.wikipedia.org/wiki/Craig_Ferguson"
+            "name": "Dylan Moran"
         },
         {
-            "name": "Dylan Moran",
-            "url": "https://en.wikipedia.org/wiki/Dylan_Moran"
+            "name": "Christopher Walken"
         },
         {
-            "name": "Christopher Walken",
-            "url": "https://en.wikipedia.org/wiki/Christopher_Walken"
+            "name": "W. Kamau Bell"
         },
         {
-            "name": "W. Kamau Bell",
-            "url": "https://en.wikipedia.org/wiki/W._Kamau_Bell"
+            "name": "Buster Keaton"
         },
         {
-            "name": "Buster Keaton",
-            "url": "https://en.wikipedia.org/wiki/Buster_Keaton"
+            "name": "Bill Murray"
         },
         {
-            "name": "Bill Murray",
-            "url": "https://en.wikipedia.org/wiki/Bill_Murray"
+            "name": "Jim Gaffigan"
         },
         {
-            "name": "Jim Gaffigan",
-            "url": "https://en.wikipedia.org/wiki/Jim_Gaffigan"
+            "name": "Les Dawson"
         },
         {
-            "name": "Les Dawson",
-            "url": "https://en.wikipedia.org/wiki/Les_Dawson"
+            "name": "Mike Birbiglia"
         },
         {
-            "name": "Mike Birbiglia",
-            "url": "https://en.wikipedia.org/wiki/Mike_Birbiglia"
+            "name": "Mitch Hedberg"
         },
         {
-            "name": "Mitch Hedberg",
-            "url": "https://en.wikipedia.org/wiki/Mitch_Hedberg"
+            "name": "Bruce McCulloch"
         },
         {
-            "name": "Bruce McCulloch",
-            "url": "https://en.wikipedia.org/wiki/Bruce_McCulloch"
+            "name": "Demetri Martin"
         },
         {
-            "name": "Demetri Martin",
-            "url": "https://en.wikipedia.org/wiki/Demetri_Martin"
+            "name": "Elliott Goblet"
         },
         {
-            "name": "Elliott Goblet",
-            "url": "https://en.wikipedia.org/wiki/Elliott_Goblet"
+            "name": "Aubrey Plaza"
         },
         {
-            "name": "Aubrey Plaza",
-            "url": "https://en.wikipedia.org/wiki/Aubrey_Plaza"
-        },
-        {
-            "name": "Zach Galifianakis",
-            "url": "https://en.wikipedia.org/wiki/Zach_Galifianakis"
+            "name": "Zach Galifianakis"
         }
     ],
     "Improvisational": [{
-            "name": "Improvisational comedy",
-            "url": "https://en.wikipedia.org/wiki/Improvisational_comedy"
+            "name": "Robin Williams"
         },
         {
-            "name": "Robin Williams",
-            "url": "https://en.wikipedia.org/wiki/Robin_Williams"
+            "name": "Jonathan Winters"
         },
         {
-            "name": "Jonathan Winters",
-            "url": "https://en.wikipedia.org/wiki/Jonathan_Winters"
+            "name": "Bob Nelson"
         },
         {
-            "name": "Bob Nelson",
-            "url": "https://en.wikipedia.org/wiki/Bob_Nelson_(comedian)"
+            "name": "Paula Poundstone"
         },
         {
-            "name": "Paula Poundstone",
-            "url": "https://en.wikipedia.org/wiki/Paula_Poundstone"
+            "name": "Paul Merton"
         },
         {
-            "name": "Paul Merton",
-            "url": "https://en.wikipedia.org/wiki/Paul_Merton"
+            "name": "Tony Slattery"
         },
         {
-            "name": "Tony Slattery",
-            "url": "https://en.wikipedia.org/wiki/Tony_Slattery"
+            "name": "Josie Lawrence"
         },
         {
-            "name": "Josie Lawrence",
-            "url": "https://en.wikipedia.org/wiki/Josie_Lawrence"
+            "name": "Jim Sweeney"
         },
         {
-            "name": "Jim Sweeney",
-            "url": "https://en.wikipedia.org/wiki/Jim_Sweeney_(comedian)"
+            "name": "Steve Steen"
         },
         {
-            "name": "Steve Steen",
-            "url": "https://en.wikipedia.org/wiki/Steve_Steen"
+            "name": "Wayne Brady"
         },
         {
-            "name": "Wayne Brady",
-            "url": "https://en.wikipedia.org/wiki/Wayne_Brady"
+            "name": "Ryan Stiles"
         },
         {
-            "name": "Ryan Stiles",
-            "url": "https://en.wikipedia.org/wiki/Ryan_Stiles"
+            "name": "Colin Mochrie"
         },
         {
-            "name": "Colin Mochrie",
-            "url": "https://en.wikipedia.org/wiki/Colin_Mochrie"
+            "name": "Drew Carey"
         },
         {
-            "name": "Drew Carey",
-            "url": "https://en.wikipedia.org/wiki/Drew_Carey"
+            "name": "Greg Proops"
         },
         {
-            "name": "Greg Proops",
-            "url": "https://en.wikipedia.org/wiki/Greg_Proops"
+            "name": "John Sessions"
         },
         {
-            "name": "John Sessions",
-            "url": "https://en.wikipedia.org/wiki/John_Sessions"
+            "name": "Neil Mullarkey"
         },
         {
-            "name": "Neil Mullarkey",
-            "url": "https://en.wikipedia.org/wiki/Neil_Mullarkey"
+            "name": "Kathy Greenwood"
         },
         {
-            "name": "Kathy Greenwood",
-            "url": "https://en.wikipedia.org/wiki/Kathy_Greenwood"
+            "name": "Brad Sherwood"
         },
         {
-            "name": "Brad Sherwood",
-            "url": "https://en.wikipedia.org/wiki/Brad_Sherwood"
+            "name": "Chip Esten"
         },
         {
-            "name": "Chip Esten",
-            "url": "https://en.wikipedia.org/wiki/Chip_Esten"
+            "name": "Jeff Davis"
         },
         {
-            "name": "Jeff Davis",
-            "url": "https://en.wikipedia.org/wiki/Jeff_B._Davis"
+            "name": "Tina Fey"
         },
         {
-            "name": "Tina Fey",
-            "url": "https://en.wikipedia.org/wiki/Tina_Fey"
+            "name": "Amy Poehler"
         },
         {
-            "name": "Amy Poehler",
-            "url": "https://en.wikipedia.org/wiki/Amy_Poehler"
+            "name": "Jonathan Mangum"
         },
         {
-            "name": "Jonathan Mangum",
-            "url": "https://en.wikipedia.org/wiki/Jonathan_Mangum"
+            "name": "Mark Meer"
         },
         {
-            "name": "Mark Meer",
-            "url": "https://en.wikipedia.org/wiki/Mark_Meer"
-        },
-        {
-            "name": "Larry David",
-            "url": "https://en.wikipedia.org/wiki/Larry_David"
+            "name": "Larry David"
         }
     ],
     "Insult": [{
-            "name": "Don Rickles",
-            "url": "https://en.wikipedia.org/wiki/Don_Rickles"
+            "name": "Don Rickles"
         },
         {
-            "name": "Andrew Dice Clay",
-            "url": "https://en.wikipedia.org/wiki/Andrew_Dice_Clay"
+            "name": "Andrew Dice Clay"
         },
         {
-            "name": "Ricky Gervais",
-            "url": "https://en.wikipedia.org/wiki/Ricky_Gervais"
+            "name": "Ricky Gervais"
         },
         {
-            "name": "Bob Saget",
-            "url": "https://en.wikipedia.org/wiki/Bob_Saget"
+            "name": "Bob Saget"
         },
         {
-            "name": "Frankie Boyle",
-            "url": "https://en.wikipedia.org/wiki/Frankie_Boyle"
+            "name": "Frankie Boyle"
         },
         {
-            "name": "Jimmy Carr",
-            "url": "https://en.wikipedia.org/wiki/Jimmy_Carr"
+            "name": "Jimmy Carr"
         },
         {
-            "name": "Jerry Sadowitz",
-            "url": "https://en.wikipedia.org/wiki/Jerry_Sadowitz"
+            "name": "Jerry Sadowitz"
         },
         {
-            "name": "Sam Kinison",
-            "url": "https://en.wikipedia.org/wiki/Sam_Kinison"
+            "name": "Sam Kinison"
         },
         {
-            "name": "Seth MacFarlane",
-            "url": "https://en.wikipedia.org/wiki/Seth_MacFarlane"
+            "name": "Seth MacFarlane"
         },
         {
-            "name": "Triumph, the Insult Comic Dog",
-            "url": "https://en.wikipedia.org/wiki/Triumph,_the_Insult_Comic_Dog"
+            "name": "Triumph, the Insult Comic Dog"
         },
         {
-            "name": "Roy 'Chubby' Brown",
-            "url": "https://en.wikipedia.org/wiki/Roy_%27Chubby%27_Brown"
+            "name": "Roy 'Chubby' Brown"
         },
         {
-            "name": "Marcus Valerius Martialis",
-            "url": "https://en.wikipedia.org/wiki/Marcus_Valerius_Martialis"
+            "name": "Marcus Valerius Martialis"
         },
         {
-            "name": "Jeffrey Ross",
-            "url": "https://en.wikipedia.org/wiki/Jeffrey_Ross"
+            "name": "Jeffrey Ross"
         },
         {
-            "name": "Lisa Lampanelli",
-            "url": "https://en.wikipedia.org/wiki/Lisa_Lampanelli"
+            "name": "Lisa Lampanelli"
         },
         {
-            "name": "D.L. Hughley",
-            "url": "https://en.wikipedia.org/wiki/D.L._Hughley"
+            "name": "D.L. Hughley"
         },
         {
-            "name": "Greg Giraldo",
-            "url": "https://en.wikipedia.org/wiki/Greg_Giraldo"
+            "name": "Greg Giraldo"
         },
         {
-            "name": "Goundamani",
-            "url": "https://en.wikipedia.org/wiki/Goundamani"
+            "name": "Goundamani"
         },
         {
-            "name": "Kathy Griffin",
-            "url": "https://en.wikipedia.org/wiki/Kathy_Griffin"
+            "name": "Kathy Griffin"
         }
     ],
     "Musical": [{
-            "name": "Musical Comedy",
-            "url": "https://en.wikipedia.org/wiki/Musical_Comedy"
+            "name": "Bill Bailey"
         },
         {
-            "name": "music",
-            "url": "https://en.wikipedia.org/wiki/Music"
+            "name": "Denis Leary"
         },
         {
-            "name": "lyrics",
-            "url": "https://en.wikipedia.org/wiki/Lyrics"
+            "name": "Tim Minchin"
         },
         {
-            "name": "Bill Bailey",
-            "url": "https://en.wikipedia.org/wiki/Bill_Bailey"
+            "name": "Ninja Sex Party"
         },
         {
-            "name": "Denis Leary",
-            "url": "https://en.wikipedia.org/wiki/Denis_Leary"
+            "name": "The Lonely Island"
         },
         {
-            "name": "Tim Minchin",
-            "url": "https://en.wikipedia.org/wiki/Tim_Minchin"
+            "name": "Flight Of The Conchords"
         },
         {
-            "name": "Ninja Sex Party",
-            "url": "https://en.wikipedia.org/wiki/Ninja_Sex_Party"
+            "name": "Les Luthiers"
         },
         {
-            "name": "The Lonely Island",
-            "url": "https://en.wikipedia.org/wiki/The_Lonely_Island"
+            "name": "Mitch Benn"
         },
         {
-            "name": "Flight Of The Conchords",
-            "url": "https://en.wikipedia.org/wiki/Flight_Of_The_Conchords"
+            "name": "Tenacious D"
         },
         {
-            "name": "Les Luthiers",
-            "url": "https://en.wikipedia.org/wiki/Les_Luthiers"
+            "name": "Spinal Tap"
         },
         {
-            "name": "Mitch Benn",
-            "url": "https://en.wikipedia.org/wiki/Mitch_Benn"
+            "name": "Seth MacFarlane"
         },
         {
-            "name": "Tenacious D",
-            "url": "https://en.wikipedia.org/wiki/Tenacious_D"
+            "name": "Stephen Lynch"
         },
         {
-            "name": "Spinal Tap",
-            "url": "https://en.wikipedia.org/wiki/Spinal_Tap_(band)"
+            "name": "\"Weird Al\" Yankovic"
         },
         {
-            "name": "Seth MacFarlane",
-            "url": "https://en.wikipedia.org/wiki/Seth_MacFarlane"
+            "name": "Bob Rivers"
         },
         {
-            "name": "Stephen Lynch",
-            "url": "https://en.wikipedia.org/wiki/Stephen_Lynch_(musician)"
+            "name": "Bo Burnham"
         },
         {
-            "name": "\"Weird Al\" Yankovic",
-            "url": "https://en.wikipedia.org/wiki/%22Weird_Al%22_Yankovic"
+            "name": "Wayne Brady"
         },
         {
-            "name": "Bob Rivers",
-            "url": "https://en.wikipedia.org/wiki/Bob_Rivers"
+            "name": "Bonzo Dog Doo-Dah Band"
         },
         {
-            "name": "Bo Burnham",
-            "url": "https://en.wikipedia.org/wiki/Bo_Burnham"
+            "name": "Tom Lehrer"
         },
         {
-            "name": "Wayne Brady",
-            "url": "https://en.wikipedia.org/wiki/Wayne_Brady"
-        },
-        {
-            "name": "Bonzo Dog Doo-Dah Band",
-            "url": "https://en.wikipedia.org/wiki/Bonzo_Dog_Doo-Dah_Band"
-        },
-        {
-            "name": "Tom Lehrer",
-            "url": "https://en.wikipedia.org/wiki/Tom_Lehrer"
-        },
-        {
-            "name": "Victor Borge",
-            "url": "https://en.wikipedia.org/wiki/Victor_Borge"
+            "name": "Victor Borge"
         }
     ],
     "Observational": [{
-            "name": "Observational comedy",
-            "url": "https://en.wikipedia.org/wiki/Observational_comedy"
+            "name": "George Carlin"
         },
         {
-            "name": "everyday life",
-            "url": "https://en.wikipedia.org/wiki/Everyday_life"
+            "name": "Jerry Seinfeld"
         },
         {
-            "name": "George Carlin",
-            "url": "https://en.wikipedia.org/wiki/George_Carlin"
+            "name": "Louis C.K."
         },
         {
-            "name": "Jerry Seinfeld",
-            "url": "https://en.wikipedia.org/wiki/Jerry_Seinfeld"
+            "name": "Craig Ferguson"
         },
         {
-            "name": "Louis C.K.",
-            "url": "https://en.wikipedia.org/wiki/Louis_C.K."
+            "name": "Larry David"
         },
         {
-            "name": "Craig Ferguson",
-            "url": "https://en.wikipedia.org/wiki/Craig_Ferguson"
+            "name": "Mitch Hedberg"
         },
         {
-            "name": "Larry David",
-            "url": "https://en.wikipedia.org/wiki/Larry_David"
+            "name": "Billy Connolly"
         },
         {
-            "name": "Mitch Hedberg",
-            "url": "https://en.wikipedia.org/wiki/Mitch_Hedberg"
+            "name": "Michael McIntyre"
         },
         {
-            "name": "Billy Connolly",
-            "url": "https://en.wikipedia.org/wiki/Billy_Connolly"
+            "name": "Russell Howard"
         },
         {
-            "name": "Michael McIntyre",
-            "url": "https://en.wikipedia.org/wiki/Michael_McIntyre"
+            "name": "Cedric the Entertainer"
         },
         {
-            "name": "Russell Howard",
-            "url": "https://en.wikipedia.org/wiki/Russell_Howard"
+            "name": "Steve Harvey"
         },
         {
-            "name": "Cedric the Entertainer",
-            "url": "https://en.wikipedia.org/wiki/Cedric_the_Entertainer"
+            "name": "Gabriel Iglesias"
         },
         {
-            "name": "Steve Harvey",
-            "url": "https://en.wikipedia.org/wiki/Steve_Harvey"
+            "name": "W. Kamau Bell"
         },
         {
-            "name": "Gabriel Iglesias",
-            "url": "https://en.wikipedia.org/wiki/Gabriel_Iglesias"
+            "name": "Ray Romano"
         },
         {
-            "name": "W. Kamau Bell",
-            "url": "https://en.wikipedia.org/wiki/W._Kamau_Bell"
+            "name": "Chris Rush"
         },
         {
-            "name": "Ray Romano",
-            "url": "https://en.wikipedia.org/wiki/Ray_Romano"
+            "name": "Dane Cook"
         },
         {
-            "name": "Chris Rush",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rush"
+            "name": "Ricky Gervais"
         },
         {
-            "name": "Dane Cook",
-            "url": "https://en.wikipedia.org/wiki/Dane_Cook"
+            "name": "Chris Rock"
         },
         {
-            "name": "Ricky Gervais",
-            "url": "https://en.wikipedia.org/wiki/Ricky_Gervais"
+            "name": "Jim Gaffigan"
         },
         {
-            "name": "Chris Rock",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rock"
+            "name": "Kathy Greenwood"
         },
         {
-            "name": "Jim Gaffigan",
-            "url": "https://en.wikipedia.org/wiki/Jim_Gaffigan"
+            "name": "Ellen DeGeneres"
         },
         {
-            "name": "Kathy Greenwood",
-            "url": "https://en.wikipedia.org/wiki/Kathy_Greenwood"
+            "name": "Russell Peters"
         },
         {
-            "name": "Ellen DeGeneres",
-            "url": "https://en.wikipedia.org/wiki/Ellen_DeGeneres"
-        },
-        {
-            "name": "Russell Peters",
-            "url": "https://en.wikipedia.org/wiki/Russell_Peters"
-        },
-        {
-            "name": "John Mulaney",
-            "url": "https://en.wikipedia.org/wiki/John_Mulaney"
+            "name": "John Mulaney"
         }
     ],
     "Physical": [{
-            "name": "Physical comedy",
-            "url": "https://en.wikipedia.org/wiki/Physical_comedy"
+            "name": "Jim Carrey"
         },
         {
-            "name": "slapstick",
-            "url": "https://en.wikipedia.org/wiki/Slapstick"
+            "name": "Bob Nelson"
         },
         {
-            "name": "clowning",
-            "url": "https://en.wikipedia.org/wiki/Clown"
+            "name": "Norman Wisdom"
         },
         {
-            "name": "Jim Carrey",
-            "url": "https://en.wikipedia.org/wiki/Jim_Carrey"
+            "name": "Jerry Lewis"
         },
         {
-            "name": "Bob Nelson",
-            "url": "https://en.wikipedia.org/wiki/Bob_Nelson_(comedian)"
+            "name": "Robin Williams"
         },
         {
-            "name": "Norman Wisdom",
-            "url": "https://en.wikipedia.org/wiki/Norman_Wisdom"
+            "name": "Chevy Chase"
         },
         {
-            "name": "Jerry Lewis",
-            "url": "https://en.wikipedia.org/wiki/Jerry_Lewis"
+            "name": "John Ritter"
         },
         {
-            "name": "Robin Williams",
-            "url": "https://en.wikipedia.org/wiki/Robin_Williams"
+            "name": "Conan O'Brien"
         },
         {
-            "name": "Chevy Chase",
-            "url": "https://en.wikipedia.org/wiki/Chevy_Chase"
+            "name": "Kunal Nayyar"
         },
         {
-            "name": "John Ritter",
-            "url": "https://en.wikipedia.org/wiki/John_Ritter"
+            "name": "Mr. Bean"
         },
         {
-            "name": "Conan O'Brien",
-            "url": "https://en.wikipedia.org/wiki/Conan_O%27Brien"
+            "name": "Michael Mcintyre"
         },
         {
-            "name": "Kunal Nayyar",
-            "url": "https://en.wikipedia.org/wiki/Kunal_Nayyar"
+            "name": "Lee Evans"
         },
         {
-            "name": "Mr. Bean",
-            "url": "https://en.wikipedia.org/wiki/Mr._Bean"
+            "name": "Max Wall"
         },
         {
-            "name": "Michael Mcintyre",
-            "url": "https://en.wikipedia.org/wiki/Michael_Mcintyre"
+            "name": "Matthew Perry"
         },
         {
-            "name": "Lee Evans",
-            "url": "https://en.wikipedia.org/wiki/Lee_Evans_(comedian)"
+            "name": "Brent Butt"
         },
         {
-            "name": "Max Wall",
-            "url": "https://en.wikipedia.org/wiki/Max_Wall"
+            "name": "Kathy Greenwood"
         },
         {
-            "name": "Matthew Perry",
-            "url": "https://en.wikipedia.org/wiki/Matthew_Perry"
+            "name": "The Three Stooges"
         },
         {
-            "name": "Brent Butt",
-            "url": "https://en.wikipedia.org/wiki/Brent_Butt"
+            "name": "Lano & Woodley"
         },
         {
-            "name": "Kathy Greenwood",
-            "url": "https://en.wikipedia.org/wiki/Kathy_Greenwood"
+            "name": "Lucille Ball"
         },
         {
-            "name": "The Three Stooges",
-            "url": "https://en.wikipedia.org/wiki/The_Three_Stooges"
+            "name": "Chris Farley"
         },
         {
-            "name": "Lano & Woodley",
-            "url": "https://en.wikipedia.org/wiki/Lano_%26_Woodley"
-        },
-        {
-            "name": "Lucille Ball",
-            "url": "https://en.wikipedia.org/wiki/Lucille_Ball"
-        },
-        {
-            "name": "Chris Farley",
-            "url": "https://en.wikipedia.org/wiki/Chris_Farley"
-        },
-        {
-            "name": "Sebastian Maniscalco",
-            "url": "https://en.wikipedia.org/wiki/Sebastian_Maniscalco"
+            "name": "Sebastian Maniscalco"
         }
     ],
     "Prop": [{
-            "name": "Prop comedy",
-            "url": "https://en.wikipedia.org/wiki/Prop_comedy"
+            "name": "Bob Nelson"
         },
         {
-            "name": "Bob Nelson",
-            "url": "https://en.wikipedia.org/wiki/Bob_Nelson_(comedian)"
+            "name": "Carrot Top"
         },
         {
-            "name": "Carrot Top",
-            "url": "https://en.wikipedia.org/wiki/Carrot_Top"
+            "name": "Jeff Dunham"
         },
         {
-            "name": "Jeff Dunham",
-            "url": "https://en.wikipedia.org/wiki/Jeff_Dunham"
+            "name": "Gallagher"
         },
         {
-            "name": "Gallagher",
-            "url": "https://en.wikipedia.org/wiki/Leo_Gallagher"
+            "name": "Timmy Mallett"
         },
         {
-            "name": "Timmy Mallett",
-            "url": "https://en.wikipedia.org/wiki/Timmy_Mallett"
+            "name": "The Amazing Johnathan"
         },
         {
-            "name": "The Amazing Johnathan",
-            "url": "https://en.wikipedia.org/wiki/The_Amazing_Johnathan"
+            "name": "Jerry Sadowitz"
         },
         {
-            "name": "Jerry Sadowitz",
-            "url": "https://en.wikipedia.org/wiki/Jerry_Sadowitz"
-        },
-        {
-            "name": "Red Skelton",
-            "url": "https://en.wikipedia.org/wiki/Red_Skelton"
+            "name": "Red Skelton"
         }
     ],
     "Surreal": [{
-            "name": "Surreal comedy",
-            "url": "https://en.wikipedia.org/wiki/Surreal_humor"
+            "name": "Spike Milligan"
         },
         {
-            "name": "humor",
-            "url": "https://en.wikipedia.org/wiki/Humor"
+            "name": "Jay Kogen"
         },
         {
-            "name": "juxtapositions",
-            "url": "https://en.wikipedia.org/wiki/Contrast_(linguistics)"
+            "name": "Eddie Izzard"
         },
         {
-            "name": "absurd",
-            "url": "https://en.wikipedia.org/wiki/Absurdity"
+            "name": "J. Stewart Burns"
         },
         {
-            "name": "nonsense",
-            "url": "https://en.wikipedia.org/wiki/Nonsense"
+            "name": "Ross Noble"
         },
         {
-            "name": "Spike Milligan",
-            "url": "https://en.wikipedia.org/wiki/Spike_Milligan"
+            "name": "Bill Bailey"
         },
         {
-            "name": "Jay Kogen",
-            "url": "https://en.wikipedia.org/wiki/Jay_Kogen"
+            "name": "Brent Butt"
         },
         {
-            "name": "Eddie Izzard",
-            "url": "https://en.wikipedia.org/wiki/Eddie_Izzard"
+            "name": "The Mighty Boosh"
         },
         {
-            "name": "J. Stewart Burns",
-            "url": "https://en.wikipedia.org/wiki/J._Stewart_Burns"
+            "name": "Steven Wright"
         },
         {
-            "name": "Ross Noble",
-            "url": "https://en.wikipedia.org/wiki/Ross_Noble"
+            "name": "Trey Parker"
         },
         {
-            "name": "Bill Bailey",
-            "url": "https://en.wikipedia.org/wiki/Bill_Bailey"
+            "name": "Monty Python"
         },
         {
-            "name": "Brent Butt",
-            "url": "https://en.wikipedia.org/wiki/Brent_Butt"
+            "name": "Seth MacFarlane"
         },
         {
-            "name": "The Mighty Boosh",
-            "url": "https://en.wikipedia.org/wiki/The_Mighty_Boosh"
+            "name": "David X. Cohen"
         },
         {
-            "name": "Steven Wright",
-            "url": "https://en.wikipedia.org/wiki/Steven_Wright"
+            "name": "Vic and Bob"
         },
         {
-            "name": "Trey Parker",
-            "url": "https://en.wikipedia.org/wiki/Trey_Parker"
+            "name": "The Goodies"
         },
         {
-            "name": "Monty Python",
-            "url": "https://en.wikipedia.org/wiki/Monty_Python"
+            "name": "Jack Handey"
         },
         {
-            "name": "Seth MacFarlane",
-            "url": "https://en.wikipedia.org/wiki/Seth_MacFarlane"
+            "name": "Derek Drymon"
         },
         {
-            "name": "David X. Cohen",
-            "url": "https://en.wikipedia.org/wiki/David_X._Cohen"
+            "name": "Wallace Wolodarsky"
         },
         {
-            "name": "Vic and Bob",
-            "url": "https://en.wikipedia.org/wiki/Vic_and_Bob"
+            "name": "Harry Hill"
         },
         {
-            "name": "The Goodies",
-            "url": "https://en.wikipedia.org/wiki/The_Goodies"
+            "name": "The Kids in the Hall"
         },
         {
-            "name": "Jack Handey",
-            "url": "https://en.wikipedia.org/wiki/Jack_Handey"
+            "name": "Conan O'Brien"
         },
         {
-            "name": "Derek Drymon",
-            "url": "https://en.wikipedia.org/wiki/Derek_Drymon"
+            "name": "Tim and Eric"
         },
         {
-            "name": "Wallace Wolodarsky",
-            "url": "https://en.wikipedia.org/wiki/Wallace_Wolodarsky"
+            "name": "Paul Merton"
         },
         {
-            "name": "Harry Hill",
-            "url": "https://en.wikipedia.org/wiki/Harry_Hill"
+            "name": "Mitch Hedberg"
         },
         {
-            "name": "The Kids in the Hall",
-            "url": "https://en.wikipedia.org/wiki/The_Kids_in_the_Hall"
+            "name": "Firesign Theatre"
         },
         {
-            "name": "Conan O'Brien",
-            "url": "https://en.wikipedia.org/wiki/Conan_O%27Brien"
+            "name": "Shaun Micallef"
         },
         {
-            "name": "Tim and Eric",
-            "url": "https://en.wikipedia.org/wiki/Tim_and_Eric"
-        },
-        {
-            "name": "Paul Merton",
-            "url": "https://en.wikipedia.org/wiki/Paul_Merton"
-        },
-        {
-            "name": "Mitch Hedberg",
-            "url": "https://en.wikipedia.org/wiki/Mitch_Hedberg"
-        },
-        {
-            "name": "Firesign Theatre",
-            "url": "https://en.wikipedia.org/wiki/Firesign_Theatre"
-        },
-        {
-            "name": "Shaun Micallef",
-            "url": "https://en.wikipedia.org/wiki/Shaun_Micallef"
-        },
-        {
-            "name": "Emo Philips",
-            "url": "https://en.wikipedia.org/wiki/Emo_Philips"
+            "name": "Emo Philips"
         }
     ],
     "Satire": [{
-            "name": "Satire",
-            "url": "https://en.wikipedia.org/wiki/Satire"
+            "name": "George Carlin"
         },
         {
-            "name": "George Carlin",
-            "url": "https://en.wikipedia.org/wiki/George_Carlin"
+            "name": "Bill Hicks"
         },
         {
-            "name": "Bill Hicks",
-            "url": "https://en.wikipedia.org/wiki/Bill_Hicks"
+            "name": "Chris Morris"
         },
         {
-            "name": "Chris Morris",
-            "url": "https://en.wikipedia.org/wiki/Chris_Morris_(satirist)"
+            "name": "Dennis Miller"
         },
         {
-            "name": "Dennis Miller",
-            "url": "https://en.wikipedia.org/wiki/Dennis_Miller"
+            "name": "Conan O'Brien"
         },
         {
-            "name": "Conan O'Brien",
-            "url": "https://en.wikipedia.org/wiki/Conan_O%27Brien"
+            "name": "Russell Howard"
         },
         {
-            "name": "Russell Howard",
-            "url": "https://en.wikipedia.org/wiki/Russell_Howard"
+            "name": "Craig Ferguson"
         },
         {
-            "name": "Craig Ferguson",
-            "url": "https://en.wikipedia.org/wiki/Craig_Ferguson"
+            "name": "David Letterman"
         },
         {
-            "name": "David Letterman",
-            "url": "https://en.wikipedia.org/wiki/David_Letterman"
+            "name": "Jay Leno"
         },
         {
-            "name": "Jay Leno",
-            "url": "https://en.wikipedia.org/wiki/Jay_Leno"
+            "name": "Dan Harmon"
         },
         {
-            "name": "Dan Harmon",
-            "url": "https://en.wikipedia.org/wiki/Dan_Harmon"
+            "name": "Andy Hamilton"
         },
         {
-            "name": "Andy Hamilton",
-            "url": "https://en.wikipedia.org/wiki/Andy_Hamilton"
+            "name": "Bill Maher"
         },
         {
-            "name": "Bill Maher",
-            "url": "https://en.wikipedia.org/wiki/Bill_Maher"
+            "name": "John Oliver"
         },
         {
-            "name": "John Oliver",
-            "url": "https://en.wikipedia.org/wiki/John_Oliver"
+            "name": "Ian Hislop"
         },
         {
-            "name": "Ian Hislop",
-            "url": "https://en.wikipedia.org/wiki/Ian_Hislop"
+            "name": "Brent Butt"
         },
         {
-            "name": "Brent Butt",
-            "url": "https://en.wikipedia.org/wiki/Brent_Butt"
+            "name": "Paul Merton"
         },
         {
-            "name": "Paul Merton",
-            "url": "https://en.wikipedia.org/wiki/Paul_Merton"
+            "name": "Kathy Griffin"
         },
         {
-            "name": "Kathy Griffin",
-            "url": "https://en.wikipedia.org/wiki/Kathy_Griffin"
+            "name": "Jon Stewart"
         },
         {
-            "name": "Jon Stewart",
-            "url": "https://en.wikipedia.org/wiki/Jon_Stewart"
+            "name": "Stephen Colbert"
         },
         {
-            "name": "Stephen Colbert",
-            "url": "https://en.wikipedia.org/wiki/Stephen_Colbert"
+            "name": "Stewart Lee"
         },
         {
-            "name": "Stewart Lee",
-            "url": "https://en.wikipedia.org/wiki/Stewart_Lee"
+            "name": "Matt Groening"
         },
         {
-            "name": "Matt Groening",
-            "url": "https://en.wikipedia.org/wiki/Matt_Groening"
+            "name": "Rory Bremner"
         },
         {
-            "name": "Rory Bremner",
-            "url": "https://en.wikipedia.org/wiki/Rory_Bremner"
+            "name": "W. Kamau Bell"
         },
         {
-            "name": "W. Kamau Bell",
-            "url": "https://en.wikipedia.org/wiki/W._Kamau_Bell"
+            "name": "Ben Elton"
         },
         {
-            "name": "Ben Elton",
-            "url": "https://en.wikipedia.org/wiki/Ben_Elton"
+            "name": "David Cross"
         },
         {
-            "name": "David Cross",
-            "url": "https://en.wikipedia.org/wiki/David_Cross"
+            "name": "Lewis Black"
         },
         {
-            "name": "Lewis Black",
-            "url": "https://en.wikipedia.org/wiki/Lewis_Black"
+            "name": "Chris Rock"
         },
         {
-            "name": "Chris Rock",
-            "url": "https://en.wikipedia.org/wiki/Chris_Rock"
+            "name": "Dave Chappelle"
         },
         {
-            "name": "Dave Chappelle",
-            "url": "https://en.wikipedia.org/wiki/Dave_Chappelle"
+            "name": "The Chaser"
         },
         {
-            "name": "The Chaser",
-            "url": "https://en.wikipedia.org/wiki/The_Chaser"
+            "name": "Punt and Dennis"
         },
         {
-            "name": "Punt and Dennis",
-            "url": "https://en.wikipedia.org/wiki/Punt_and_Dennis"
+            "name": "Jon Holmes"
         },
         {
-            "name": "Jon Holmes",
-            "url": "https://en.wikipedia.org/wiki/Jon_Holmes"
+            "name": "Late Show with David Letterman"
         },
         {
-            "name": "Late Show with David Letterman",
-            "url": "https://en.wikipedia.org/wiki/Late_Show_with_David_Letterman"
+            "name": "Wait Wait... Don't Tell Me!"
         },
         {
-            "name": "Wait Wait... Don't Tell Me!",
-            "url": "https://en.wikipedia.org/wiki/Wait_Wait..._Don%27t_Tell_Me!"
-        },
-        {
-            "name": "South Park",
-            "url": "https://en.wikipedia.org/wiki/South_Park"
+            "name": "South Park"
         }
     ],
     "Wit": [{
-            "name": "Wit",
-            "url": "https://en.wikipedia.org/wiki/Wit"
+            "name": "Groucho Marx"
         },
         {
-            "name": "Word play",
-            "url": "https://en.wikipedia.org/wiki/Word_play"
+            "name": "William Shakespeare"
         },
         {
-            "name": "puns",
-            "url": "https://en.wikipedia.org/wiki/Pun"
+            "name": "Harry Hill"
         },
         {
-            "name": "farcical",
-            "url": "https://en.wikipedia.org/wiki/Farce"
+            "name": "Jay Jason"
         },
         {
-            "name": "Groucho Marx",
-            "url": "https://en.wikipedia.org/wiki/Groucho_Marx"
+            "name": "Oscar Wilde"
         },
         {
-            "name": "William Shakespeare",
-            "url": "https://en.wikipedia.org/wiki/William_Shakespeare"
+            "name": "Woody Allen"
         },
         {
-            "name": "Harry Hill",
-            "url": "https://en.wikipedia.org/wiki/Harry_Hill"
+            "name": "George Carlin"
         },
         {
-            "name": "Jay Jason",
-            "url": "https://en.wikipedia.org/wiki/Jay_Jason"
+            "name": "Tim Vine"
         },
         {
-            "name": "Oscar Wilde",
-            "url": "https://en.wikipedia.org/wiki/Oscar_Wilde"
+            "name": "Stephen Fry"
         },
         {
-            "name": "Woody Allen",
-            "url": "https://en.wikipedia.org/wiki/Woody_Allen"
+            "name": "Demetri Martin"
         },
         {
-            "name": "George Carlin",
-            "url": "https://en.wikipedia.org/wiki/George_Carlin"
+            "name": "Bo Burnham"
         },
         {
-            "name": "Tim Vine",
-            "url": "https://en.wikipedia.org/wiki/Tim_Vine"
+            "name": "Firesign Theatre"
         },
         {
-            "name": "Stephen Fry",
-            "url": "https://en.wikipedia.org/wiki/Stephen_Fry"
+            "name": "Myq Kaplan"
         },
         {
-            "name": "Demetri Martin",
-            "url": "https://en.wikipedia.org/wiki/Demetri_Martin"
+            "name": "Crazy Mohan -Tamil"
         },
         {
-            "name": "Bo Burnham",
-            "url": "https://en.wikipedia.org/wiki/Bo_Burnham"
-        },
-        {
-            "name": "Firesign Theatre",
-            "url": "https://en.wikipedia.org/wiki/Firesign_Theatre"
-        },
-        {
-            "name": "Myq Kaplan",
-            "url": "https://en.wikipedia.org/wiki/Myq_Kaplan"
-        },
-        {
-            "name": "Crazy Mohan -Tamil",
-            "url": "https://en.wikipedia.org/w/index.php?title=Crazy_Mohan_-Tamil&action=edit&redlink=1"
-        },
-        {
-            "name": "Coen brothers",
-            "url": "https://en.wikipedia.org/wiki/Coen_brothers"
+            "name": "Coen brothers"
         }
     ]
-}]
+}
