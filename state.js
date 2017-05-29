@@ -1,4 +1,4 @@
-{
+var state = {
     "Alternative": [{
             "name": "Alternative comedy",
             "url": "https://en.wikipedia.org/wiki/Alternative_comedy",
