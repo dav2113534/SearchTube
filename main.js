@@ -1,7 +1,24 @@
-var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
+// var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
 
+// function getData() {
+//     var getJson = {
+//         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
+//         keyword: '',
+//         currency: ''
+//     }
+// }
 
+var availableTags= []; 
 
+function getTags(){
+
+}
+
+function auto() {
+    $('.searchTerm').autocomplete({
+        source: availableTags
+    });
+}
 
 
 
