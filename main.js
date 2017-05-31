@@ -8,17 +8,30 @@
 //     }
 // }
 
-var availableTags= []; 
+// state.genres[i].comedians
 
-function getTags(){
+// let availableTags = [];
 
+// var availableTags = state.map(function(x){
+//     for(var i = 0; i < x.genres.length; i++){
+//         return x.genres[i].comedians; 
+//     }
+// })
+
+var availableTags = []; 
+
+function getTags() {
+    for (var i = 0; i < state.genres.length; i++){
+       availableTags.push(state.genres[i].comedians)
+    }
 }
 
-function auto() {
-    $('.searchTerm').autocomplete({
-        source: availableTags
-    });
-}
+
+// function auto() {
+//     $('.searchTerm').autocomplete({
+//         source: availableTags
+//     });
+// }
 
 
 
