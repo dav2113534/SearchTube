@@ -6,21 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
     <div class='search'>
-        <input type="text" class='searchTerm' placeholder='How can I help you'>
+        <input type="text" class='searchTerm' autocomplete="on" placeholder='How can I help you'>
         <button type='submit' class='searchButton'></button>
     </div>
     <div>
         <input type="text" class="zipCode" placeholder="Zip Code">
         <button type="submit" class="submitZip"></button>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
     <script src="state.js"></script>
+    <script src="main.js"></script>
+    
 
 </body>
 

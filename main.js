@@ -8,33 +8,43 @@
 //     }
 // }
 
-// state.genres[i].comedians
 
-// let availableTags = [];
 
-// var availableTags = state.map(function(x){
-//     for(var i = 0; i < x.genres.length; i++){
-//         return x.genres[i].comedians; 
-//     }
-// })
-
-var availableTags = []; 
-
-function getTags() {
-    for (var i = 0; i < state.genres.length; i++){
-       availableTags.push(state.genres[i].comedians)
-    }
+function complete() {
+    var comedians =
+        state.genres.map(function (x) {
+            return x.comedians;
+        })
+    //This will combine every array into a single array
+    //Refer to this repl https://repl.it/I0hd/0
+    return Array.prototype.concat.apply([], comedians);
 }
 
-$
+
+
+function render() {
+    $('.searchTerm').autocomplete({
+        source: complete(),
+        select: console.log
+    })
+    
+}
+
+render();
 
 
 
-// function auto() {
-//     $('.searchTerm').autocomplete({
-//         source: availableTags
-//     });
-// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
