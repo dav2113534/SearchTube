@@ -85,5 +85,6 @@ var state = {
 
             ]
         }
-    ]
+    ], 
+    choices: []
 }

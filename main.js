@@ -9,7 +9,20 @@
 // }
 
 
+// Your goal is to display list of related comedians(based on genre) 
+//for comedian they have selected. If you complete it go ahead 
+//and try to call Ticketmaster api with selected comedian.
 
+
+
+
+/* 
+Create a function that finds a comedian that is similar genre if 
+the comedian selected is not within the 50 mile radius
+Also, give them recommendations 
+*/
+
+//Complete gathers up the arrays 
 function complete() {
     var comedians =
         state.genres.map(function (x) {
@@ -20,6 +33,13 @@ function complete() {
     return Array.prototype.concat.apply([], comedians);
 }
 
+/* 
+This should list comics that are in the same genres as 
+the one selected in the search bar 
+*/
+function similarComics(){
+    
+}
 
 
 function render() {
@@ -27,40 +47,7 @@ function render() {
         source: complete(),
         select: console.log
     })
-    
+
 }
 
 render();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//add a zip code search bar to find events near a 50 mile
-//radius 
-
-/* 
-Keep each comedian to one genre(most popular genre)
-use to split strings 
-
-json file format
-[
-  { genre: "Spoof", comedians: ["Mel Brooks", "French and Saunders"] }
-]
-"Richard Pryor, Jeff Foxworthy, Gorge Lopez, Jerrod Guillory, Bill Engvall, Gabriel Iglesias".split(',').map((c) => c.trim())
-*/
