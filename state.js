@@ -85,6 +85,14 @@ var state = {
 
             ]
         }
-    ], 
-    choices: []
+    ],
+    choices: [],
+    getRelatedComedians: function (comedian) {
+        let genre = this.genres.find(function (x) {
+            return x.comedians.indexOf(comedian) !== -1;
+        });
+        return genre.comedians.filter(function (x) {
+            return x !== comedian;
+        })
+    }
 }

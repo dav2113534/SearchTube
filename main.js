@@ -31,23 +31,46 @@ function complete() {
     //This will combine every array into a single array
     //Refer to this repl https://repl.it/I0hd/0
     return Array.prototype.concat.apply([], comedians);
+
 }
 
 /* 
 This should list comics that are in the same genres as 
 the one selected in the search bar 
 */
-function similarComics(){
-    
+// var saveChoices = state.choices.push($('.searchTerm'));
+// function saveChoices(){
+//     var string = state.choices; 
+//     $('.searchTerm').submit().html(string)
+// }
+
+// function saveChoice() {
+//     // var choice = state.choices.push("$('.searchTerm')")
+//     if (state.choices !== undefined) {
+//         return choice
+//     }
+// }
+
+
+
+function getSearchTerm() {
+    return $('.searchTerm').val();
+
 }
+
+function displayList() {
+    $('.searchTerm').submit(state)
+}
+
 
 
 function render() {
     $('.searchTerm').autocomplete({
         source: complete(),
-        select: console.log
+        select: function (e, selected) {
+            console.log(state.getRelatedComedians(selected.item.value));
+        }
     })
-
 }
 
 render();
