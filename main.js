@@ -1,29 +1,19 @@
-// var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
+var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/'
 
-// function getData() {
-//     var getJson = {
-//         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
-//         keyword: '',
-//         currency: ''
-//     }
-// }
+function getData(callback) {
+    var getJson = {
+        apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
+        keyword: '',
+        priceRanges: ''
+    }
+    $.getJSON(ticketmasterUrl, getJson, callback)
+}
 
 
 // Your goal is to display list of related comedians(based on genre) 
 //for comedian they have selected. If you complete it go ahead 
 //and try to call Ticketmaster api with selected comedian.
 
-
-
-
-/* 
-Create a function that finds a comedian that is similar genre if 
-the comedian selected is not within the 50 mile radius
-Also, give them recommendations 
-
-Your goal is to a very simple output for 
-events search based on related comedians.
-*/
 
 function getRandomColor(){
     var letters = '123456789ABCDEF'
@@ -61,13 +51,11 @@ function getSearchTerm() {
 
 
 
-
-
 function render() {
     $('.searchTerm').autocomplete({
         source: complete(),
         select: function (e, selected) {
-            $('.searchButton').text(state.getRelatedComedians(selected.item.value))
+            $('.sameGenre').html(state.getRelatedComedians(selected.item.value).join(", ").split("  "))
             // console.log(state.getRelatedComedians(selected.item.value));
         }
     })
