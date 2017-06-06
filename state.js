@@ -87,6 +87,10 @@ var state = {
         }
     ],
     choices: [],
+    /* 
+This should list comics that are in the same genres as 
+the one selected in the search bar 
+*/
     getRelatedComedians: function (comedian) {
         let genre = this.genres.find(function (x) {
             return x.comedians.indexOf(comedian) !== -1;

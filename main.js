@@ -20,7 +20,27 @@
 Create a function that finds a comedian that is similar genre if 
 the comedian selected is not within the 50 mile radius
 Also, give them recommendations 
+
+Your goal is to a very simple output for 
+events search based on related comedians.
 */
+
+function getRandomColor(){
+    var letters = '123456789ABCDEF'
+    var color = '#';
+    for(var i = 0; i < 6; i++){
+        color+= letters[Math.floor(Math.random() * 16)]
+    }
+    return color; 
+}
+
+function setRandomColor(){
+    $('#colorpad').css('background-color',getRandomColor());
+}
+
+setRandomColor(); 
+
+
 
 //Complete gathers up the arrays 
 function complete() {
@@ -31,26 +51,7 @@ function complete() {
     //This will combine every array into a single array
     //Refer to this repl https://repl.it/I0hd/0
     return Array.prototype.concat.apply([], comedians);
-
 }
-
-/* 
-This should list comics that are in the same genres as 
-the one selected in the search bar 
-*/
-// var saveChoices = state.choices.push($('.searchTerm'));
-// function saveChoices(){
-//     var string = state.choices; 
-//     $('.searchTerm').submit().html(string)
-// }
-
-// function saveChoice() {
-//     // var choice = state.choices.push("$('.searchTerm')")
-//     if (state.choices !== undefined) {
-//         return choice
-//     }
-// }
-
 
 
 function getSearchTerm() {
@@ -58,9 +59,7 @@ function getSearchTerm() {
 
 }
 
-function displayList() {
-    $('.searchTerm').submit(state)
-}
+
 
 
 
@@ -68,7 +67,8 @@ function render() {
     $('.searchTerm').autocomplete({
         source: complete(),
         select: function (e, selected) {
-            console.log(state.getRelatedComedians(selected.item.value));
+            $('.searchButton').text(state.getRelatedComedians(selected.item.value))
+            // console.log(state.getRelatedComedians(selected.item.value));
         }
     })
 }
