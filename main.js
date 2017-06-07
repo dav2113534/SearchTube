@@ -10,13 +10,15 @@ function getData(comedian) {
 }
 
 function findMatch(data) {
-    console.log(data)
-    var next = state.getComedianPool
-    if (data !== state.getComedianPool.length) {
-        return next
+    var eventData = data["_embedded"];
+    if (eventData === undefined) {
+        console.log("search more");
+    } else {
+        console.log("event:", eventData);
     }
 }
 
+//render events with the api 
 
 //Complete gathers up the arrays 
 function complete() {
@@ -54,6 +56,10 @@ function render() {
         source: complete(),
         select: onComedianSelected
     })
+    $('#formData').submit(function (e) {
+        e.preventDefault();
+        getData(state.getComedianPool.shift());
+    });
 }
 
 
