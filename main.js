@@ -1,9 +1,12 @@
 var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/events'
 
-function getData(comedian) {
+function getData(comedian, zipCode) {
     var getJson = {
         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
         keyword: comedian,
+        postalCode: zipCode,
+        unit: "miles"
+
     }
 
     $.getJSON(ticketmasterUrl, getJson, findMatch)
@@ -11,21 +14,19 @@ function getData(comedian) {
 
 function displayData(data) {
     if (data._embedded) {
-        var result = data._embedded.map(function(x){
-            var events = x.events
+        var result = data._embedded.map(function (x) {
+            var events = x.events[0]
         }).join('');
-    }else{
+    } else {
         "<p> No Events </p>";
     }
-    $('.events').html(result); 
+    $('.events').html(result);
 }
 
 function findMatch(data) {
     var eventData = data["_embedded"];
     if (eventData === undefined) {
         console.log("search more");
-        alert("Sorry No Events Found.")
-
     } else {
         console.log("event:", eventData);
     }
@@ -73,6 +74,11 @@ function render() {
         e.preventDefault();
         getData(state.getComedianPool.shift());
     });
+    // $('#formData').submit(function (e) {
+    //     e.preventDefault();
+    //     // getData(displayData)
+    //     console.log("Im not doing anything")
+    // })
 }
 
 
