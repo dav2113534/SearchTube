@@ -38,7 +38,7 @@ var state = {
         },
         {
             "name": "Improvisational comedy",
-            "comedians": ["Robin Williams", "Jonathan Winters", "Bob Nelson", "Paula Poundstone", "Paul Merton", "Tony Slattery", "Josie Lawrence", "Jim Sweeney", "Steve Steen", "Wayne Brady", "Ryan Stiles", "Colin Mochrie", "Drew Carey", "Greg Proops", "John Sessions", "Neil Mullarkey", "Kathy Greenwood", "Brad Sherwood", "Chip Esten", "Jeff Davis", "Tina Fey", "Amy Poehler", "Jonathan Mangum", "Mark Meer", "Larry David"]
+            "comedians": ["Robin Williams", "Jonathan Winters", "Bob Nelson", "Paula Poundstone", "Paul Merton", "Tony Slattery", "Josie Lawrence", "Jim Sweeney", "Steve Steen", "Wayne Brady", "Ryan Stiles", "Colin Mochrie", "Drew Carey", "Greg Proops", "John Sessions", "Neil Mullarkey", "Kathy Greenwood", "Brad Sherwood", "Chip Esten", "Jeff Davis", "Tina Fey", "Amy Poehler", "Jonathan Mangum", "Mark Meer", "Larry David", "Scott Aukerman", "Horatio Sanz", "Lauren Lapkus"]
         },
         {
             "name": "Insult Comedy",

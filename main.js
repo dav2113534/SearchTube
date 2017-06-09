@@ -9,10 +9,23 @@ function getData(comedian) {
     $.getJSON(ticketmasterUrl, getJson, findMatch)
 }
 
+function displayData(data) {
+    if (data._embedded) {
+        var result = data._embedded.map(function(x){
+            var events = x.events
+        }).join('');
+    }else{
+        "<p> No Events </p>";
+    }
+    $('.events').html(result); 
+}
+
 function findMatch(data) {
     var eventData = data["_embedded"];
     if (eventData === undefined) {
         console.log("search more");
+        alert("Sorry No Events Found.")
+
     } else {
         console.log("event:", eventData);
     }
