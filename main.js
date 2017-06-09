@@ -9,18 +9,16 @@ function getData(comedian, zipCode) {
 
     }
 
-    $.getJSON(ticketmasterUrl, getJson, findMatch)
+    $.getJSON(ticketmasterUrl, getJson, saveEvents)
 }
 
-function displayData(data) {
-    if (data._embedded) {
-        var result = data._embedded.map(function (x) {
-            var events = x.events
-        })
+function saveEvents(data) {
+    if (data["_embedded"]) {
+        state.events = data["_embedded"].events
     } else {
-       $('.events').html("<p> No Events </p>");
+        console.log("be lazy")
     }
-    $('.events').html(result);
+    render();
 }
 
 function findMatch(data) {
@@ -74,11 +72,16 @@ function render() {
         e.preventDefault();
         getData(state.getComedianPool.shift());
     });
-    // $('#formData').submit(function (e) {
-    //     e.preventDefault();
-    //     // getData(displayData)
-    //     console.log("Im not doing anything")
-    // })
+    if (state.events) {
+        $('.events').html(renderEvents(state.events));
+    }
+}
+
+function renderEvents(events) {
+    var result = events.map(function (x) {
+        return x.name
+    })
+    return result;
 }
 
 

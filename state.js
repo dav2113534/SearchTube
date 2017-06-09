@@ -86,7 +86,7 @@ var state = {
             ]
         }
     ],
-    choices: [],
+    events: [],
     /* 
 This should list comics that are in the same genres as 
 the one selected in the search bar 
@@ -99,4 +99,5 @@ the one selected in the search bar
             return x !== comedian;
         })
     }
+    
 }
