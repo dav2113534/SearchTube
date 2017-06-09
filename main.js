@@ -15,10 +15,10 @@ function getData(comedian, zipCode) {
 function displayData(data) {
     if (data._embedded) {
         var result = data._embedded.map(function (x) {
-            var events = x.events[0]
-        }).join('');
+            var events = x.events
+        })
     } else {
-        "<p> No Events </p>";
+       $('.events').html("<p> No Events </p>");
     }
     $('.events').html(result);
 }
