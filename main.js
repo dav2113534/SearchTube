@@ -14,7 +14,7 @@ function getData(comedian, zipCode) {
 
 function saveEvents(data) {
     if (data["_embedded"]) {
-        state.events = data["_embedded"].events
+        state.events = data["_embedded"].events;
     } else {
         console.log("be lazy")
     }
@@ -30,7 +30,7 @@ function findMatch(data) {
     }
 }
 
-//render events with the api 
+
 
 //Complete gathers up the arrays 
 function complete() {
@@ -53,16 +53,15 @@ function renderRelatedComedians(comedians) {
 
 function onComedianSelected(e, selected) {
     var relatedComedians = state.getRelatedComedians(selected.item.value)
-    //pool is a pool of functions 
+    //pool is a pool of comedians 
     state.getComedianPool = [];
     state.getComedianPool.push(selected.item.value);
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
 
 
     renderRelatedComedians(relatedComedians);
-    // console.log(state.getRelatedComedians(selected.item.value));
 }
-// 
+
 function render() {
     $('.searchTerm').autocomplete({
         source: complete(),
@@ -74,6 +73,7 @@ function render() {
     });
     if (state.events) {
         $('.events').html(renderEvents(state.events));
+        $('.events').html(renderVenues(state.events))
     }
 }
 
@@ -84,6 +84,11 @@ function renderEvents(events) {
     return result;
 }
 
+function renderVenues(events){
+var result = events.map(function(x){
+    return x.url; 
+})
+}
 
 function getRandomColor() {
     var letters = '123456789ABCDEF'
