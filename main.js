@@ -21,6 +21,7 @@ function saveEvents(data) {
     render();
 }
 
+
 function findMatch(data) {
     var eventData = data["_embedded"];
     if (eventData === undefined) {
@@ -86,9 +87,11 @@ function renderEvents(events) {
 
 function renderVenues(events) {
     var result = events.map(function (x) {
-        return x._embedded.venues;
+        return x._embedded.venues[0].name + " ";
     })
+    return result;
 }
+//state.events[0]._embedded.venues[0].name 
 
 function getRandomColor() {
     var letters = '123456789ABCDEF'
