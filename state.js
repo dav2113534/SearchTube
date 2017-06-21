@@ -99,5 +99,5 @@ the one selected in the search bar
             return x !== comedian;
         })
     }
-    
+
 }

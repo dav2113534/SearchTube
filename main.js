@@ -73,21 +73,21 @@ function render() {
     });
     if (state.events) {
         $('.events').html(renderEvents(state.events));
-        $('.events').html(renderVenues(state.events))
+        $('.venues').html(renderVenues(state.events))
     }
 }
 
 function renderEvents(events) {
     var result = events.map(function (x) {
-        return x.name
+        return x.name + " ";
     })
     return result;
 }
 
-function renderVenues(events){
-var result = events.map(function(x){
-    return x.url; 
-})
+function renderVenues(events) {
+    var result = events.map(function (x) {
+        return x._embedded.venues;
+    })
 }
 
 function getRandomColor() {
