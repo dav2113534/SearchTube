@@ -73,25 +73,31 @@ function render() {
         getData(state.getComedianPool.shift());
     });
     if (state.events) {
-        $('.events').html(renderEvents(state.events));
-        $('.venues').html(renderVenues(state.events))
+       state.events.map(renderTemplate); 
     }
 }
 
-function renderEvents(events) {
-    var result = events.map(function (x) {
-        return x.name + " ";
-    })
-    return result;
+function renderEvent(event) {
+    return event.name + "<br/>" + " ";
 }
 
-function renderVenues(events) {
-    var result = events.map(function (x) {
-        return x._embedded.venues[0].name + " ";
-    })
-    return result;
+function renderEvents(events) {
+    return events.map(renderEvent)
 }
-//state.events[0]._embedded.venues[0].name 
+
+function renderVenue(x) {
+    return x._embedded.venues[0].name + "<br/>" + " ";
+}
+
+
+function renderVenues(events) {
+    return events.map(renderVenue)
+}
+
+function renderTemplate(event) {
+    return  $('.venues').html(renderEvent(event) + ":" + renderVenue(event));
+}
+
 
 function getRandomColor() {
     var letters = '123456789ABCDEF'
