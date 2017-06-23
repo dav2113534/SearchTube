@@ -95,7 +95,7 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-    return  $('.venues').html(renderEvent(event) + ":" + renderVenue(event));
+    return  $('.venues').html("Event Name: " + renderEvent(event)  + "Venue: " + renderVenue(event));
 }
 
 
