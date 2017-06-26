@@ -13,7 +13,7 @@ var state = {
         },
         {
             "name": "Black comedy",
-            "comedians": ["Coen brothers", "Jim Norton", "Lenny Bruce", "Bill Hicks", "Frankie Boyle", "Jimmy Carr", "Louis C.K.", "Denis Leary", "Richard Pryor", "Ricky Gervais", "George Carlin", "Chris Rush", "Mike Ward", "Penn & Teller", "Seth MacFarlane", "Christopher Titus", "Sacha Baron Cohen", "Trey Parker", "Matt Stone", "Quentin Tarantino", "David Cross", "Peter Kay", "Anthony Jeselnik", "Bill Cosby", "Seth Rogen", "Evan Goldberg"]
+            "comedians": ["Coen brothers", "Jim Norton", "Lenny Bruce", "Bill Hicks", "Frankie Boyle", "Jimmy Carr", "Denis Leary", "Richard Pryor", "Ricky Gervais", "George Carlin", "Chris Rush", "Mike Ward", "Penn & Teller", "Seth MacFarlane", "Christopher Titus", "Sacha Baron Cohen", "Trey Parker", "Matt Stone", "Quentin Tarantino", "David Cross", "Peter Kay", "Anthony Jeselnik", "Bill Cosby", "Seth Rogen", "Evan Goldberg"]
         },
         {
             "name": "Blue comedy",
@@ -76,7 +76,7 @@ var state = {
         },
         {
             "name": "Satire",
-            "comedians": ["George Carlin", "Bill Hicks", "Chris Morris", "Dennis Miller", "Conan O'Brien", "Russell Howard", "Craig Ferguson", "David Letterman", "Jay Leno", "Dan Harmon", "Andy Hamilton", "Bill Maher", "John Oliver", "Ian Hislop", "Brent Butt", "Paul Merton", "Kathy Griffin", "Jon Stewart", "Stephen Colbert", "Stewart Lee", "Matt Groening", "Rory Bremner", "W. Kamau Bell", "Ben Elton", "David Cross", "Lewis Black", "Chris Rock", "Dave Chappelle", "The Chaser", "Punt and Dennis", "Jon Holmes"
+            "comedians": ["Kevin Hart", "George Carlin", "Bill Hicks", "Chris Morris", "Dennis Miller", "Conan O'Brien", "Russell Howard", "Craig Ferguson", "David Letterman", "Jay Leno", "Dan Harmon", "Andy Hamilton", "Bill Maher", "John Oliver", "Ian Hislop", "Brent Butt", "Paul Merton", "Kathy Griffin", "Jon Stewart", "Stephen Colbert", "Stewart Lee", "Matt Groening", "Rory Bremner", "W. Kamau Bell", "Ben Elton", "David Cross", "Lewis Black", "Chris Rock", "Dave Chappelle", "The Chaser", "Punt and Dennis", "Jon Holmes"
 
             ]
         }

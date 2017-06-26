@@ -88,6 +88,9 @@ function renderEvent(x) {
     return x.name + "<br/>" + " ";
 }
 
+function renderCity(x){
+    return x._embedded.venues[0].city.name + "<br/>" + " ";
+}
 function renderEvents(events) {
     return events.map(renderEvent)
 }
@@ -102,7 +105,7 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-    return $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event));
+    return $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
 }
 
 
