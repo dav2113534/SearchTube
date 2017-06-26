@@ -1,15 +1,15 @@
 var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/events'
 
-function getData(comedian, zipCode) {
+function getData(comedian, cities) {
     var getJson = {
         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
         keyword: comedian,
-        postalCode: zipCode,
+        city: cities,
         unit: "miles"
 
     }
 
-    $.getJSON(ticketmasterUrl, getJson, saveEvents)
+    $.getJSON(ticketmasterUrl, getJson, saveEvents, findCity)
 }
 
 function saveEvents(data) {
@@ -20,16 +20,24 @@ function saveEvents(data) {
     }
     render();
 }
-
-
-function findMatch(data) {
-    var eventData = data["_embedded"];
-    if (eventData === undefined) {
-        console.log("search more");
-    } else {
-        console.log("event:", eventData);
+/*      _embedded.events.place.city.name     */
+function findCity(data) {
+    if (data["_embedded"]) {
+        state.eventLocation = data["_embedded"].events.place.city.name;
+    } else{
+        console.log("City not found")
     }
 }
+
+
+// function findMatch(data) {
+//     var eventData = data["_embedded"];
+//     if (eventData === undefined) {
+//         console.log("search more");
+//     } else {
+//         console.log("event:", eventData);
+//     }
+// }
 
 
 
@@ -73,12 +81,13 @@ function render() {
         getData(state.getComedianPool.shift());
     });
     if (state.events) {
-       state.events.map(renderTemplate); 
+        state.events.map(renderTemplate);
     }
 }
 
-function renderEvent(event) {
-    return event.name + "<br/>" + " ";
+
+function renderEvent(x) {
+    return x.name + "<br/>" + " ";
 }
 
 function renderEvents(events) {
@@ -95,7 +104,7 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-    return  $('.venues').html("Event Name: " + renderEvent(event)  + "Venue: " + renderVenue(event));
+    return $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event));
 }
 
 
