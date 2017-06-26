@@ -9,7 +9,7 @@ function getData(comedian, cities) {
 
     }
 
-    $.getJSON(ticketmasterUrl, getJson, saveEvents, findCity)
+    $.getJSON(ticketmasterUrl, getJson, saveEvents)
 }
 
 function saveEvents(data) {
@@ -20,14 +20,19 @@ function saveEvents(data) {
     }
     render();
 }
+
+/* input.cities has our city text   */
 /*      _embedded.events.place.city.name     */
-function findCity(data) {
-    if (data["_embedded"]) {
-        state.eventLocation = data["_embedded"].events.place.city.name;
-    } else{
-        console.log("City not found")
-    }
-}
+/*      state.events[0]._embedded.venues[0].city.name     */
+
+// function saveCity(data) {
+//     if (data["_embedded"]) {
+//         state.eventLocation = data["_embedded"].events[0]._embedded.venues[0].city.name;
+//     } else{
+//         console.log("City not found")
+//     }
+// }
+
 
 
 // function findMatch(data) {
@@ -71,6 +76,13 @@ function onComedianSelected(e, selected) {
     renderRelatedComedians(relatedComedians);
 }
 
+// function renderCity(){
+//     $('.cities').submit(function(e){
+//         e.preventDefault(); 
+//         getData(searchCity())
+//     })
+// }
+
 function render() {
     $('.searchTerm').autocomplete({
         source: complete(),
@@ -81,10 +93,15 @@ function render() {
         getData(state.getComedianPool.shift());
     });
     if (state.events) {
-        state.events.map(renderTemplate);
+        state.events.map(renderTemplate); 
     }
 }
 
+function renderCity(){
+    $('.cities').submit(function(e){
+        return state.events[0]._embedded.venues[0].city.name;
+    })
+}
 
 function renderEvent(x) {
     return x.name + "<br/>" + " ";
