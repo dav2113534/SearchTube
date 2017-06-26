@@ -9,7 +9,7 @@ function getData(comedian, cities) {
 
     }
 
-    $.getJSON(ticketmasterUrl, getJson, saveEvents)
+    $.getJSON(ticketmasterUrl, getJson, saveEvents, renderCity)
 }
 
 function saveEvents(data) {
@@ -19,6 +19,7 @@ function saveEvents(data) {
         console.log("be lazy")
     }
     render();
+    renderCity(); 
 }
 
 /* input.cities has our city text   */
@@ -97,9 +98,10 @@ function render() {
     }
 }
 
-function renderCity(){
+function renderCity(cities){
     $('.cities').submit(function(e){
-        return state.events[0]._embedded.venues[0].city.name;
+        var city = state.events[0]._embedded.venues[0].city.name;
+        
     })
 }
 
