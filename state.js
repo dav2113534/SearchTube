@@ -8,13 +8,8 @@ var state = {
         {
             "name": "Anecdotal comedy",
             "comedians": [
-                "Patrice O'Neal", " Russell Peter", " Aries Spears", "Hannibal Buress", "Deon Cole", "John Mulaney", "Bill Burr", "Roy Wood, Jr.", "Dave Chappelle", "Cedric The Entertainer", "Bernie Mac", "Gabriel Iglesias", "Alonzo Bodden", "D.L. Hughley", "Jamie Foxx", "Eddie Griffin", "Patton Oswalt", "Jim Gaffigan", "Tom Segura", "Chris Rock"
+                "Patrice O'Neal", " Russell Peter", " Aries Spears", "Hannibal Buress", "Deon Cole", "John Mulaney", "Bill Burr", "Roy Wood, Jr.", "Cedric The Entertainer", "Bernie Mac", "Gabriel Iglesias", "Alonzo Bodden", "D.L. Hughley", "Jamie Foxx", "Eddie Griffin", "Patton Oswalt", "Jim Gaffigan", "Tom Segura", "Chris Rock"
             ]
-        },
-
-        {
-            "name": "Anecdotal",
-            "comedians": ["Kevin Hart", "Louis CK", "Patrice O'Neal", "Russell Peter", "Aries Spears", "Hannibal Buress", "Deon Cole", "John Mulaney", "Bill Burr", "Roy Wood, Jr.", "Dave Chappelle", "Cedric The Entertainer", "Bernie Mac", "Gabriel Iglesias", "Alonzo Bodden", "D.L. Hughley", "Jamie Foxx", "Eddie Griffin", "Patton Oswalt", "Jim Gaffigan", "Tom Segura", "Chris Rock"]
         },
         {
             "name": "Black comedy",
