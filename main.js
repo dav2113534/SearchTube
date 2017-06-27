@@ -46,16 +46,16 @@ function complete() {
     return Array.prototype.concat.apply([], comedians);
 }
 
-function sameGenre(){
+function sameGenre() {
     var message = "<p> Here is a list of similar comedians </p>"
-    return message; 
+    return message;
 }
 
 function renderRelatedComedians(comedians) {
     comedians = comedians.join(", ")
         .split("  ");
-    $('.sameGenre').html(comedians); 
-$('.description').html(sameGenre);
+    $('.sameGenre').html(comedians);
+    $('.description').html(sameGenre);
 
 }
 
