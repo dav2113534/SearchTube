@@ -5,14 +5,35 @@
     <title>Comedy Search</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
-<body>
-    <div class='search'>
-        <input type="text" class='searchTerm' placeholder='How can I help you'>
-        <button type='submit' class='searchButton'></button>
-    </div>
+<body id="colorpad">
+    <form id="formData">
+        <header>Local Stand-up Shows!</header>
+        <div class='search'>
+            <input type="text" class='searchTerm' autocomplete="on" placeholder='Search for a comedian near you'>
+            <p class='description'></p>
+            <p class="sameGenre"></p>
+        </div>
+        <div>
+            <input type="text" class="cities" placeholder="City">
+        </div>
+        <div>
+            <button type="submit" id="button">Submit</button>
+            <p class="events"></p>
+            <p class="venues"></p>
+            <p class="city"></p>
+        </div>
+    </form>
+
+
+    <script src="state.js"></script>
+    <script src="main.js"></script>
+
 
 </body>
 
