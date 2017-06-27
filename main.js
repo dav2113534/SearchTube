@@ -46,12 +46,17 @@ function complete() {
     return Array.prototype.concat.apply([], comedians);
 }
 
-
+function sameGenre(){
+    var message = "<p> Here is a list of similar comedians </p>"
+    return message; 
+}
 
 function renderRelatedComedians(comedians) {
     comedians = comedians.join(", ")
         .split("  ");
-    $('.sameGenre').html(comedians);
+    $('.sameGenre').html(comedians); 
+$('.description').html(sameGenre);
+
 }
 
 function onComedianSelected(e, selected) {
@@ -67,7 +72,7 @@ function onComedianSelected(e, selected) {
 
 function load() {
     $('#button').hide()
-    var search ='<p> Searching for events!! </p>'; 
+    var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
 }
 
