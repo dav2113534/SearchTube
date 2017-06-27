@@ -65,7 +65,11 @@ function onComedianSelected(e, selected) {
     renderRelatedComedians(relatedComedians);
 }
 
-
+function load() {
+    $('#button').hide()
+    var search ='<p> Searching for events!! </p>'; 
+    $('.venues').html(search);
+}
 
 function render() {
     //makes autocomplete possible 
@@ -76,7 +80,7 @@ function render() {
     $('#formData').submit(function (e) {
         e.preventDefault();
         getData(state.getComedianPool.shift()).then(saveEvents);
-    $('#button').hide();
+        load();
     });
     if (state.events) {
         state.events.map(renderTemplate);
