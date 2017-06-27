@@ -1,14 +1,14 @@
 var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/events'
 
-function getData(comedian, cities) {
+function getData(comedian) {
     var cities = $('.cities').val();
-    var getJson = {
+    var options = {
         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
         keyword: comedian,
         city: cities,
     }
 
-    $.getJSON(ticketmasterUrl, getJson, saveEvents)
+    return Promise.resolve($.getJSON(ticketmasterUrl, options));
 }
 
 
@@ -16,14 +16,12 @@ function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
     } else {
+        var nextComedian = state.getComedianPool.shift()
+        getData(nextComedian).then(saveEvents);
         console.log("be lazy")
     }
     render();
 }
-
-/* input.cities has our city text   */
-/*      _embedded.events.place.city.name     */
-/*      state.events[0]._embedded.venues[0].city.name     */
 
 
 // function findMatch(data) {
@@ -70,13 +68,15 @@ function onComedianSelected(e, selected) {
 
 
 function render() {
+    //makes autocomplete possible 
     $('.searchTerm').autocomplete({
         source: complete(),
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
         e.preventDefault();
-        getData(state.getComedianPool.shift());
+        getData(state.getComedianPool.shift()).then(saveEvents);
+    $('#button').hide();
     });
     if (state.events) {
         state.events.map(renderTemplate);
@@ -85,12 +85,14 @@ function render() {
 
 
 function renderEvent(x) {
-    return x.name + "<br/>" + " ";
+    var url = state.events[0]._embedded.attractions[0].url;
+    return url + x.name + "<br/>" + " ";
 }
 
-function renderCity(x){
+function renderCity(x) {
     return x._embedded.venues[0].city.name + "<br/>" + " ";
 }
+
 function renderEvents(events) {
     return events.map(renderEvent)
 }
