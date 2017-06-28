@@ -18,22 +18,15 @@ function saveEvents(data) {
     } else {
         var nextComedian = state.getComedianPool.shift()
         getData(nextComedian).then(saveEvents);
-        console.log("be lazy")
     }
     render();
 }
 
-
-// function findMatch(data) {
-//     var eventData = data["_embedded"];
-//     if (eventData === undefined) {
-//         console.log("search more");
-//     } else {
-//         console.log("event:", eventData);
-//     }
-// }
-
-
+function setLoading(){
+    state.loading = true;
+    if(state.loading){
+    } 
+}
 
 //Complete gathers up the arrays 
 function complete() {
@@ -71,7 +64,7 @@ function onComedianSelected(e, selected) {
 }
 
 function load() {
-    $('#button').hide()
+    // $('#submit').hide()
     var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
 }
@@ -84,8 +77,8 @@ function render() {
     })
     $('#formData').submit(function (e) {
         e.preventDefault();
-        getData(state.getComedianPool.shift()).then(saveEvents);
         load();
+        getData(state.getComedianPool.shift()).then(saveEvents); 
     });
     if (state.events) {
         state.events.map(renderTemplate);
@@ -95,7 +88,7 @@ function render() {
 
 function renderEvent(x) {
     var url = state.events[0]._embedded.attractions[0].url;
-    return url + x.name + "<br/>" + " ";
+    return  x.name.link(url) + "<br/>" + " ";
 }
 
 function renderCity(x) {
@@ -118,22 +111,5 @@ function renderVenues(events) {
 function renderTemplate(event) {
     return $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
 }
-
-
-function getRandomColor() {
-    var letters = '123456789ABCDEF'
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)]
-    }
-    return color;
-}
-
-function setRandomColor() {
-    $('#colorpad').css('background-color', getRandomColor());
-}
-
-setRandomColor();
-
 
 render();

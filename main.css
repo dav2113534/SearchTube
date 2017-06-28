@@ -1,3 +1,8 @@
 * {
     box-sizing: border-box;
 }
+
+input {
+    width: 17em;
+    margin-top: 5em;
+}
