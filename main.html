@@ -11,23 +11,24 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
-<body id="colorpad">
+<body>
+    <header>Local Stand-Up Shows!</header>
+    
     <form id="formData">
-        <header>Local Stand-Up Shows!</header>
-        <div class='search'>
+        <section class='search'>
             <input type="text" class='searchTerm' autocomplete="on" placeholder='Search for a comedian near you'>
             <p class='description'></p>
             <p class="sameGenre"></p>
-        </div>
-        <div>
+        </section>
+        <section class="citySect">
             <input type="text" class="cities" placeholder="City">
-        </div>
-        <div>
+        </section>
+        <section class="searchResults">
             <button type="submit" id="submit">Submit</button>
             <p class="events"></p>
             <p class="venues"></p>
             <p class="city"></p>
-        </div>
+        </section>
     </form>
 
 

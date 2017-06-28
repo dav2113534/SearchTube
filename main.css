@@ -2,7 +2,22 @@
     box-sizing: border-box;
 }
 
-input {
+header {
     width: 17em;
-    margin-top: 5em;
+    margin-bottom: 5em;
+    text-align: center;
+    margin: auto;
+    background-color: green;
+}
+
+.search {
+    background-color: red;
+}
+
+.citySect {
+    background-color: blue;
+}
+
+.searchResults {
+    background-color: yellow;
 }
