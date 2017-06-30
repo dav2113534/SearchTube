@@ -18,8 +18,9 @@ html {
     background-image: url("https://cdn-images-1.medium.com/max/2000/1*SrD_OfiRgnpPIbEqyE-HVA.jpeg")
 }
 
-.sameGenre {
+.search {
     color: gray;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
+
