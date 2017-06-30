@@ -11,7 +11,15 @@ header {
 
 .searchResults {
     margin-top: .5em;
+    color: black;
 }
-html{
+
+html {
     background-image: url("https://cdn-images-1.medium.com/max/2000/1*SrD_OfiRgnpPIbEqyE-HVA.jpeg")
+}
+
+.sameGenre {
+    color: gray;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
 }

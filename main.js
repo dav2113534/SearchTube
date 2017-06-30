@@ -23,8 +23,8 @@ function saveEvents(data) {
 }
 
 //this should let user submit another search
-function setLoading(){
-    state.choices = a
+function setLoading() {
+    state.loading = true;
 }
 
 //Complete gathers up the arrays 
@@ -77,17 +77,17 @@ function render() {
     $('#formData').submit(function (e) {
         e.preventDefault();
         load();
-        getData(state.getComedianPool.shift()).then(saveEvents); 
+        getData(state.getComedianPool.shift()).then(saveEvents);
     });
     if (state.events) {
         state.events.map(renderTemplate);
-    } 
+    }
 }
 
 
 function renderEvent(x) {
     var url = state.events[0]._embedded.attractions[0].url;
-    return  x.name.link(url) + "<br/>" + " ";
+    return x.name.link(url) + "<br/>" + " ";
 }
 
 function renderCity(x) {
