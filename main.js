@@ -23,9 +23,7 @@ function saveEvents(data) {
 }
 
 function setLoading(){
-    state.loading = true;
-    if(state.loading){
-    } 
+    state.choices = 
 }
 
 //Complete gathers up the arrays 
