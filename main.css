@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-image: url("https://cdn-images-1.medium.com/max/2000/1*SrD_OfiRgnpPIbEqyE-HVA.jpeg");
 }
 
 header {
@@ -7,18 +8,8 @@ header {
     margin-bottom: 5em;
     text-align: center;
     margin: auto;
-    background-color: green;
-}
-
-.search {
-    background-color: red;
-}
-
-.citySect {
-    background-color: blue;
 }
 
 .searchResults {
     margin-top: .5em;
-    background-color: yellow;
 }

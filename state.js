@@ -8,7 +8,7 @@ var state = {
         {
             "name": "Anecdotal comedy",
             "comedians": [
-                "Patrice O'Neal", " Russell Peter", " Aries Spears", "Hannibal Buress", "Deon Cole", "John Mulaney", "Bill Burr", "Roy Wood, Jr.", "Cedric The Entertainer", "Bernie Mac", "Gabriel Iglesias", "Alonzo Bodden", "D.L. Hughley", "Jamie Foxx", "Eddie Griffin", "Patton Oswalt", "Jim Gaffigan", "Tom Segura", "Chris Rock"
+                "Patrice O'Neal", " Russell Peter", " Aries Spears", "Hannibal Buress", "Deon Cole", "John Mulaney", "Bill Burr", "Roy Wood, Jr.", "Cedric The Entertainer", "Bernie Mac", "Alonzo Bodden", "D.L. Hughley", "Jamie Foxx", "Eddie Griffin", "Patton Oswalt", "Jim Gaffigan", "Tom Segura", "Chris Rock"
             ]
         },
         {
@@ -46,7 +46,7 @@ var state = {
         },
         {
             "name": "Observational comedy",
-            "comedians": ["George Carlin", "Jerry Seinfeld", "Louis C.K.", "Craig Ferguson", "Larry David", "Mitch Hedberg", "Billy Connolly", "Michael McIntyre", "Russell Howard", "Cedric the Entertainer", "Steve Harvey", "Gabriel Iglesias", "W. Kamau Bell", "Ray Romano", "Chris Rush", "Dane Cook", "Chris Rock", "Kathy Greenwood", "Ellen DeGeneres", "Russell Peters"]
+            "comedians": ["Gabriel Iglesias", "George Carlin", "Jerry Seinfeld", "Louis C.K.", "Craig Ferguson", "Larry David", "Mitch Hedberg", "Billy Connolly", "Michael McIntyre", "Russell Howard", "Cedric the Entertainer", "Steve Harvey", "W. Kamau Bell", "Ray Romano", "Chris Rush", "Dane Cook", "Chris Rock", "Kathy Greenwood", "Ellen DeGeneres", "Russell Peters"]
         },
         {
             "name": "Physical comedy",
@@ -56,12 +56,6 @@ var state = {
             "name": "Prop comedy",
             "comedians": ["Bob Nelson", "Carrot Top", "Jeff Dunham", "Gallagher", "Timmy Mallett", "The Amazing Johnathan", "Jerry Sadowitz", "Red Skelton"]
         },
-        {
-            "name": "Heritage comedy",
-            "comedians": ["Richard Pryor", "Jeff Foxworthy", "Jerrod Guillory", "Bill Engvall", "Gabriel Iglesias"]
-        },
-
-
         {
             "name": "Sketch",
             "comedians": ["Armstrong and Miller", "Jennifer Saunders", "Lorne Michaels", "Dawn French", "Craig Ferguson", "Catherine Tate", "Voteformud"

@@ -22,8 +22,9 @@ function saveEvents(data) {
     render();
 }
 
+//this should let user submit another search
 function setLoading(){
-    state.choices = 
+    state.choices = a
 }
 
 //Complete gathers up the arrays 
@@ -80,7 +81,7 @@ function render() {
     });
     if (state.events) {
         state.events.map(renderTemplate);
-    }
+    } 
 }
 
 
