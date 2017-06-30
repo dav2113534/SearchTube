@@ -3,15 +3,20 @@
 }
 
 header {
-    width: 17em;
-    margin-bottom: 5em;
+    width: 100%;
     text-align: center;
     margin: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding-bottom: .5em;
 }
 
 .searchResults {
     margin-top: .5em;
     color: black;
+    clear: both;
+    text-align: center;
 }
 
 html {
@@ -24,3 +29,17 @@ html {
     text-shadow: 1px 1px black;
 }
 
+.searchTerm,
+.cities {
+    width: 100%;
+    font-size: medium;
+}
+
+#submit {
+    width: 50%;
+    font-size: large;
+    padding: 6px 0;
+}
+#formData{
+    margin-top: 40px;
+}
