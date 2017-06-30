@@ -2,14 +2,28 @@
     box-sizing: border-box;
 }
 
+a {
+    color: bisque;
+}
+
 header {
+    background-color: transparent;
+    backface-visibility: inherit;
+    font-size: 2.8em;
     width: 100%;
+    color: rgb(221, 221, 221);
     text-align: center;
+    top: 1em;
+    padding-bottom: 0.2em;
     margin: auto;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    padding-bottom: .5em;
+    border-radius: 1em;
+    animation: blinker 5s linear infinite;
+}
+
+p {
+    color: rgb(46, 109, 191);
+    font-weight: bold;
+    text-shadow: darkgreen 1px 1px;
 }
 
 .searchResults {
@@ -35,16 +49,23 @@ header {
 .cities {
     width: 100%;
     font-size: medium;
+    border-radius: 1em;
 }
 
 #submit {
-    width: 50%;
-    font-size: large;
-    padding: 6px 0;
+    margin-top: 2em;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    background: linear-gradient(rgb(133, 133, 133), rgb(240, 223, 197)) rgb(133, 133, 133);
+    border-radius: 60px;
+    padding: 10px 23px 8px 16px;
+    text-decoration: none;
 }
 
 #formData {
-    margin-top: 40px;
+    display: block;
+    margin-top: 5em;
 }
 
 .fullscreenVideo {
