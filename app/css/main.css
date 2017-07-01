@@ -4,6 +4,7 @@
 
 a {
     color: bisque;
+    cursor: alias;
 }
 
 header {
@@ -18,6 +19,21 @@ header {
     margin: auto;
     border-radius: 1em;
     animation: blinker 5s linear infinite;
+}
+
+#submit:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    background: linear-gradient(rgb(209, 199, 2), rgb(16, 61, 92)) rgb(209, 199, 2);
+    text-decoration: none;
+}
+
+#submit:active {
+    background-color: rgb(62, 142, 65);
+    box-shadow: rgb(102, 102, 102) 0px 5px;
+    transform: translateY(4px);
 }
 
 p {
