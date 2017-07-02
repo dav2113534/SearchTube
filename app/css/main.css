@@ -12,7 +12,9 @@ header {
     backface-visibility: inherit;
     font-size: 2.8em;
     width: 100%;
-    color: rgb(221, 221, 221);
+    color:midnightblue;
+    font-weight: bold;
+    text-shadow: black 1px 1px;
     text-align: center;
     top: 1em;
     padding-bottom: 0.2em;
