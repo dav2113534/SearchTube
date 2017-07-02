@@ -20,6 +20,11 @@ header {
     border-radius: 1em;
     animation: blinker 5s linear infinite;
 }
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
 
 #submit:hover {
     border-width: 1px;
