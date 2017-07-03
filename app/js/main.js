@@ -22,9 +22,13 @@ function saveEvents(data) {
     render();
 }
 
-//this should let user submit another search
-function setLoading() {
-    state.loading = true;
+
+//submit function won't render if comedian and city are not
+//filled out
+function emptyEvents(){
+    if(state.events === undefined){
+        alert("Please enter a comedian and city. ")
+    }
 }
 
 //Complete gathers up the arrays 
@@ -63,7 +67,6 @@ function onComedianSelected(e, selected) {
 }
 
 function load() {
-    // $('#submit').hide()
     var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
 }
@@ -75,6 +78,7 @@ function render() {
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
+        emptyEvents(); 
         e.preventDefault();
         load();
         getData(state.getComedianPool.shift()).then(saveEvents);
