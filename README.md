@@ -7,14 +7,12 @@ I used javascript and used the ticketmaster api for the ticket info.
 notes 
 -Change font style
 -Give more generic about app 
--remove radius from searh tabs 
 -submit button needs to be more modern
 -change cursor to pointer 
 -make related comedians clickable (url)
 -replace  searching text with with loading circle 
 -add padding inside search boxes 
 -add alert message if no results found 
--header remove blinking effect 
 -make info more boardly 
 -make related comedians more cleaner
 -have a map information under city search bar 
