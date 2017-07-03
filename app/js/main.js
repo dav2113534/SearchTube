@@ -71,6 +71,7 @@ function render() {
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
+        $('h1').hide(); 
         e.preventDefault();
         load();
         getData(state.getComedianPool.shift()).then(saveEvents);
