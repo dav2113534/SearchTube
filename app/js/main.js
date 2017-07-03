@@ -26,7 +26,7 @@ function saveEvents(data) {
 
 //Complete gathers up the arrays 
 function complete() {
-    var  comedians =
+    var comedians =
         state.genres.map(function (x) {
             return x.comedians;
         })
@@ -59,10 +59,10 @@ function onComedianSelected(e, selected) {
     renderRelatedComedians(relatedComedians);
 }
 
-function load() { 
+function load() {
     var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
-    }
+}
 
 function render() {
     //makes autocomplete possible 
@@ -79,6 +79,8 @@ function render() {
         state.events.map(renderTemplate);
     }
 }
+
+
 
 
 function renderEvent(x) {

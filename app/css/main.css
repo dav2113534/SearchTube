@@ -6,6 +6,12 @@ a {
     color: bisque;
     cursor: alias;
 }
+h1{
+    color: midnightblue;
+    font-weight: bold;
+    text-shadow: black 1px 1px;
+    text-align: center;
+}
 
 header {
     background-color: transparent;
