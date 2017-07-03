@@ -23,17 +23,10 @@ function saveEvents(data) {
 }
 
 
-//submit function won't render if comedian and city are not
-//filled out
-function emptyEvents(){
-    if(state.events === undefined){
-        alert("Please enter a comedian and city. ")
-    }
-}
 
 //Complete gathers up the arrays 
 function complete() {
-    var comedians =
+    var  comedians =
         state.genres.map(function (x) {
             return x.comedians;
         })
@@ -66,10 +59,10 @@ function onComedianSelected(e, selected) {
     renderRelatedComedians(relatedComedians);
 }
 
-function load() {
+function load() { 
     var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
-}
+    }
 
 function render() {
     //makes autocomplete possible 
@@ -78,7 +71,6 @@ function render() {
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
-        emptyEvents(); 
         e.preventDefault();
         load();
         getData(state.getComedianPool.shift()).then(saveEvents);
