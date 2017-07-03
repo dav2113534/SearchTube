@@ -73,7 +73,6 @@ p {
 .cities {
     width: 100%;
     font-size: medium;
-    border-radius: 1em;
 }
 
 #submit {
@@ -82,7 +81,6 @@ p {
     color: rgb(0, 0, 0);
     font-size: 40px;
     background: linear-gradient(rgb(133, 133, 133), rgb(240, 223, 197)) rgb(133, 133, 133);
-    border-radius: 60px;
     padding: 10px 23px 8px 16px;
     text-decoration: none;
 }
