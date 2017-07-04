@@ -62,6 +62,7 @@ function onComedianSelected(e, selected) {
 function load() {
     var search = '<p> Searching for events!! </p>';
     $('.venues').html(search);
+
 }
 
 function render() {
@@ -107,7 +108,8 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-    return $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
+     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
+     $('.venues')[0].scrollIntoView();
 }
 
 render();
