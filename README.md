@@ -10,9 +10,9 @@ notes
 -submit button needs to be more modern
 -change cursor to pointer 
 -make related comedians clickable (url)
--replace  searching text with with loading circle 
--add padding inside search boxes 
+-replace  searching text with with loading circle  
 -add alert message if no results found 
 -make info more boardly 
 -make related comedians more cleaner
 -have a map information under city search bar 
+state.events._embedded.venues.location
