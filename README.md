@@ -7,7 +7,7 @@ I used javascript and used the ticketmaster api for the ticket info.
 Feedback from users: 
 - ~~Change font style~~
 - Give more generic about app
-- submit button needs to be more modern
+- ~~submit button needs to be more modern~~
 - change cursor to pointer 
 - make related comedians clickable (url)
 - replace  searching text with with loading circle  
