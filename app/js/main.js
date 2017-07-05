@@ -22,7 +22,9 @@ function saveEvents(data) {
     render();
 }
 
-
+function makeComediansClick(){
+    
+}
 //Complete gathers up the arrays 
 function complete() {
     var comedians =
@@ -59,9 +61,7 @@ function onComedianSelected(e, selected) {
 }
 
 function load() {
-    var search = '<p> Searching for events!! </p>';
-    $('.venues').html(search);
-
+    $('#loader').show(); 
 }
 
 function render() {
