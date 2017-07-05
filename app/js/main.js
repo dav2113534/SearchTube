@@ -113,6 +113,7 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
+    $('#loader').hide(); 
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
     $('.venues')[0].scrollIntoView();
 }
