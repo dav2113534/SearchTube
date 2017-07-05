@@ -16,12 +16,11 @@ function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
     } else {
-        var nextComedian = state.getComedianPool.shift()
+        var nextComedian = state.getComedianPool.shift();
         getData(nextComedian).then(saveEvents);
     }
     render();
 }
-
 
 
 //Complete gathers up the arrays 
@@ -52,7 +51,7 @@ function onComedianSelected(e, selected) {
     var relatedComedians = state.getRelatedComedians(selected.item.value)
     //pool is a pool of comedians 
     state.getComedianPool = [];
-    state.getComedianPool.push(selected.item.value);
+    state.getComedianPool.push(state.currentComedian);
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
 
 
@@ -66,13 +65,19 @@ function load() {
 }
 
 function render() {
+    if (state.getComedianPool) {
+        $('.searchTerm').val(state.getComedianPool[0]);
+
+        renderRelatedComedians(state.getComedianPool.slice(1));
+    }
+    renderRelatedComedians
     //makes autocomplete possible 
     $('.searchTerm').autocomplete({
         source: complete(),
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
-        $('h1').hide(); 
+        $('h1').hide();
         e.preventDefault();
         load();
         getData(state.getComedianPool.shift()).then(saveEvents);
@@ -108,8 +113,8 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
-     $('.venues')[0].scrollIntoView();
+    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
+    $('.venues')[0].scrollIntoView();
 }
 
 render();

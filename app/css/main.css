@@ -50,12 +50,13 @@ header {
 }
 
 #submit:focus {
-    outine: none
+    outline: none
 }
 
 #submit:hover {
     background-color: #346392;
     text-shadow: -1px 1px #27496d;
+    cursor: pointer;
 }
 
 #submit:active {
