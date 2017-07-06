@@ -2,7 +2,7 @@ var state = {
     "genres": [{
             "name": "Alternative comedy",
             "comedians": [
-                'Alexei Sayle', 'Mark Steel', 'Dan Harmon', 'Dave Gorman', 'Linda Smith', 'Jeremy Hardy', 'Ron Sparks', 'Alan Davies', 'Ben Elton', 'Jo Brand', 'Stewart Lee', 'Sean Hughes', 'Callum Rose', 'Rik Mayall', 'Adrian Edmonson', 'Malcolm Hardee', 'Kristen Schaal'
+                'Nate Bargatze', 'Alexei Sayle', 'Mark Steel', 'Dan Harmon', 'Dave Gorman', 'Linda Smith', 'Jeremy Hardy', 'Ron Sparks', 'Alan Davies', 'Ben Elton', 'Jo Brand', 'Stewart Lee', 'Sean Hughes', 'Callum Rose', 'Rik Mayall', 'Adrian Edmonson', 'Malcolm Hardee', 'Kristen Schaal'
             ]
         },
         {

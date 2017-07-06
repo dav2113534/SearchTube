@@ -33,7 +33,7 @@ function complete() {
 }
 
 function sameGenre() {
-    var message = "<p> Here is a list of similar comedians </p>"
+    var message = "<p> Here are some recommendations! </p>"
     return message;
 }
 
@@ -101,7 +101,7 @@ function renderMap(x) {
     const coordinates = lat + ',' + long;
     return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
         coordinates +
-        '&zoom=12&size=400x300&sensor=false" style="width: 500px; height: 400px;" />'
+        '&zoom=12&size=400x300&sensor=false" style="width: 100%; height: 400px;" />'
 }
 
 
