@@ -22,9 +22,39 @@ function saveEvents(data) {
     render();
 }
 
-function makeComediansClick(){
-    
-}
+
+// function makeComediansClick() {
+// $('.sameGenre').click(function() {
+//     // Gets clicked on word (or selected text if text is selected)
+//     var t = '';
+//     if (window.getSelection && (sel = window.getSelection()).modify) {
+//         // Webkit, Gecko
+//         var s = window.getSelection();
+//         if (s.isCollapsed) {
+//             s.modify('move', 'forward', 'character');
+//             s.modify('move', 'backward', 'word');
+//             s.modify('extend', 'forward', 'word');
+//             t = s.toString();
+//             s.modify('move', 'forward', 'character'); //clear selection
+//         }
+//         else {
+//             t = s.toString();
+//         }
+//     } else if ((sel = document.selection) && sel.type != "Control") {
+//         // IE 4+
+//         var textRange = sel.createRange();
+//         if (!textRange.text) {
+//             textRange.expand("word");
+//         }
+//         // Remove trailing spaces
+//         while (/\s$/.test(textRange.text)) {
+//             textRange.moveEnd("character", -1);
+//         }
+//         t = textRange.text;
+//     }
+//     alert(t);
+// });
+// }
 //Complete gathers up the arrays 
 function complete() {
     var comedians =
@@ -61,7 +91,7 @@ function onComedianSelected(e, selected) {
 }
 
 function load() {
-    $('#loader').show(); 
+    $('#loader').show();
 }
 
 function render() {
@@ -85,6 +115,7 @@ function render() {
     if (state.events) {
         state.events.map(renderTemplate);
     }
+    makeComediansClick();
 }
 
 
@@ -98,6 +129,16 @@ function renderEvent(x) {
 function renderCity(x) {
     return x._embedded.venues[0].city.name + "<br/>" + " ";
 }
+
+function renderMap(x) {
+    const lat = x._embedded.venues[0].location.latitude
+    const long = x._embedded.venues[0].location.longitude
+    const coordinates = lat + ',' + long;
+    return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
+        coordinates +
+        '&zoom=12&size=400x300&sensor=false" style="width: 400px; height: 400px;" />'
+}
+
 
 function renderEvents(events) {
     return events.map(renderEvent)
@@ -113,7 +154,7 @@ function renderVenues(events) {
 }
 
 function renderTemplate(event) {
-    $('#loader').hide(); 
+    $('#loader').hide();
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
     $('.venues')[0].scrollIntoView();
 }
