@@ -120,7 +120,16 @@ p {
     transform: translate(-50%, -50%);
 }
 
-#map{
+img{
     width: 34.65em;
     padding-top: 2em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2em;
+}
+
+footer{
+    padding-top: 1em;
+    text-align: center;
 }
