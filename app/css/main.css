@@ -69,6 +69,7 @@ header {
     100% { transform: rotate(360deg); }
 }
 
+
 #submit:hover {
     background-color: #346392;
     text-shadow: -1px 1px #27496d;
@@ -117,4 +118,8 @@ p {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
+}
+
+#map{
+    width: 34.65em
 }

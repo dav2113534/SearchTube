@@ -115,7 +115,6 @@ function render() {
     if (state.events) {
         state.events.map(renderTemplate);
     }
-    makeComediansClick();
 }
 
 
@@ -157,6 +156,7 @@ function renderTemplate(event) {
     $('#loader').hide();
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
     $('.venues')[0].scrollIntoView();
+    $('#map').html(renderMap(state.events[0]))
 }
 
 render();
