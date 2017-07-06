@@ -121,5 +121,6 @@ p {
 }
 
 #map{
-    width: 34.65em
+    width: 34.65em;
+    padding-top: 2em;
 }
