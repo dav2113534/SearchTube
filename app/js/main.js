@@ -83,9 +83,6 @@ function render() {
     }
 }
 
-
-
-
 function renderEvent(x) {
     var url = state.events[0]._embedded.attractions[0].url;
     return x.name.link(url) + "<br/>" + " ";
@@ -118,9 +115,14 @@ function renderVenues(events) {
     return events.map(renderVenue)
 }
 
+function renderDate(x){
+return x.dates.start.localDate; 
+}
+
 function renderTemplate(event) {
     $('#loader').hide();
-    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event));
+    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
+     "Event Date: " + renderDate(event));
     $('.venues')[0].scrollIntoView();
     $('#map').html(renderMap(state.events[0]))
 }
