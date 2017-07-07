@@ -61,15 +61,19 @@ header {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-    display: none; 
+    display: none;
     margin-right: auto;
     margin-left: auto;
 }
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 #submit:hover {
     background-color: #346392;
@@ -99,7 +103,6 @@ p {
 .cities {
     width: 100%;
     font-size: larger;
-    /*color: black;*/
     font-weight: bold;
     padding-left: 5px;
 }
@@ -109,19 +112,18 @@ p {
     margin-top: 5em;
 }
 
-.fullscreenVideo {
+.backgroundImg {
     position: fixed;
+    z-index: -100;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    z-index: -100;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: 120%;
+    background-color: black;
+    filter: contrast(120%);
 }
-
-img{
+img {
     width: 34.65em;
     padding-top: 2em;
     display: block;
@@ -130,8 +132,14 @@ img{
     padding-bottom: 2em;
 }
 
-footer p{
+a {
     padding-top: 1em;
     text-align: center;
     color: midnightblue;
+    cursor: pointer; 
+}
+
+footer{
+    clear: both;
+    text-align: center;
 }
