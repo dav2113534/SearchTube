@@ -49,6 +49,7 @@ function onComedianSelected(e, selected) {
     var relatedComedians = state.getRelatedComedians(selected.item.value)
     //pool is a pool of comedians 
     state.getComedianPool = [];
+    state.getComedianPool.push(selected.item.value)
     state.getComedianPool.push(state.currentComedian);
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
 
@@ -109,7 +110,6 @@ function renderEvents(events) {
 function renderVenue(x) {
     return x._embedded.venues[0].name + "<br/>" + " ";
 }
-
 
 function renderVenues(events) {
     return events.map(renderVenue)
