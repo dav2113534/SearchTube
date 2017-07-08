@@ -10,7 +10,6 @@ Feedback from users:
 - ~~submit button needs to be more modern~~
 - ~~change cursor to pointer~~ 
 - ~~replace  searching text with with loading circle~~  
-- add alert message if no results found 
 - ~~have a map information under city search bar~~ 
 - ~~Change background to a image instead of a video~~
 - ~~sumbmit is return events that aren't related~~ 

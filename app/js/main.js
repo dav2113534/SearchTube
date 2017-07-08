@@ -101,7 +101,7 @@ function renderMap(x) {
     const coordinates = lat + ',' + long;
     return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
         coordinates +
-        '&zoom=12&size=400x300&sensor=false"  />'
+        '&zoom=12&size=400x300&sensor=false" >'
 }
 
 
