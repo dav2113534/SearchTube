@@ -2,7 +2,7 @@ var state = {
     "genres": [{
             "name": "Alternative comedy",
             "comedians": [
-                'Nate Bargatze', 'Alexei Sayle', 'Mark Steel', 'Dan Harmon', 'Dave Gorman', 'Linda Smith', 'Jeremy Hardy', 'Ron Sparks', 'Alan Davies', 'Ben Elton', 'Jo Brand', 'Stewart Lee', 'Sean Hughes', 'Callum Rose', 'Rik Mayall', 'Adrian Edmonson', 'Malcolm Hardee', 'Kristen Schaal'
+                'Doug Benson', 'Marc Maron', 'Nate Bargatze', 'Alexei Sayle', 'Mark Steel', 'Dan Harmon', 'Dave Gorman', 'Linda Smith', 'Jeremy Hardy', 'Ron Sparks', 'Alan Davies', 'Ben Elton', 'Jo Brand', 'Stewart Lee', 'Sean Hughes', 'Callum Rose', 'Rik Mayall', 'Adrian Edmonson', 'Malcolm Hardee', 'Kristen Schaal'
             ]
         },
         {
@@ -13,7 +13,7 @@ var state = {
         },
         {
             "name": "Black comedy",
-            "comedians": ["Coen brothers", "Jim Norton", "Lenny Bruce", "Bill Hicks", "Frankie Boyle", "Jimmy Carr", "Denis Leary", "Richard Pryor", "Ricky Gervais", "George Carlin", "Chris Rush", "Mike Ward", "Penn & Teller", "Seth MacFarlane", "Christopher Titus", "Sacha Baron Cohen", "Trey Parker", "Matt Stone", "Quentin Tarantino", "David Cross", "Peter Kay", "Anthony Jeselnik", "Bill Cosby", "Seth Rogen", "Evan Goldberg"]
+            "comedians": ["Daniel Tosh", "Coen brothers", "Jim Norton", "Lenny Bruce", "Bill Hicks", "Frankie Boyle", "Jimmy Carr", "Denis Leary", "Richard Pryor", "Ricky Gervais", "George Carlin", "Chris Rush", "Mike Ward", "Penn & Teller", "Seth MacFarlane", "Christopher Titus", "Sacha Baron Cohen", "Trey Parker", "Matt Stone", "Quentin Tarantino", "David Cross", "Peter Kay", "Anthony Jeselnik", "Bill Cosby", "Seth Rogen", "Evan Goldberg"]
         },
         {
             "name": "Blue comedy",
@@ -21,7 +21,7 @@ var state = {
         },
         {
             "name": "Character comedy",
-            "comedians": ["Phyllis Diller", "Andy Kaufman", "Bob Nelson", "Catherine Tate", "Paul Eddington", "Andrew Dice Clay", "Rich Hall", "Tim Allen", "John Gordon Sinclair", "Lenny Henry", "Sacha Baron Cohen", "Christopher Ryan", "Steve Guttenberg", "Jerry Sadowitz", "Steve Coogan", "Bip", "Jay London", "Larry the Cable Guy", "Sarah Silverman", "Rob Brydon", "Rowan Atkinson", "Peter Helliar", "Harry Enfield", "Margaret Cho", "Little Britain", "Stephen Colbert", "Al Murray", "Paul Whitehouse", "Charlie Higson", "Vadivelu"]
+            "comedians": ["Ron Funches", "Paul F. Tompkins", "Phyllis Diller", "Andy Kaufman", "Bob Nelson", "Catherine Tate", "Paul Eddington", "Andrew Dice Clay", "Rich Hall", "Tim Allen", "John Gordon Sinclair", "Lenny Henry", "Sacha Baron Cohen", "Christopher Ryan", "Steve Guttenberg", "Jerry Sadowitz", "Steve Coogan", "Bip", "Jay London", "Larry the Cable Guy", "Sarah Silverman", "Rob Brydon", "Rowan Atkinson", "Peter Helliar", "Harry Enfield", "Margaret Cho", "Little Britain", "Stephen Colbert", "Al Murray", "Paul Whitehouse", "Charlie Higson", "Vadivelu"]
         },
         {
             "name": "Cringe comedy",
@@ -33,7 +33,7 @@ var state = {
         },
         {
             "name": "Improvisational comedy",
-            "comedians": ["Robin Williams", "Jonathan Winters", "Bob Nelson", "Paula Poundstone", "Paul Merton", "Tony Slattery", "Josie Lawrence", "Jim Sweeney", "Steve Steen", "Wayne Brady", "Ryan Stiles", "Colin Mochrie", "Drew Carey", "Greg Proops", "John Sessions", "Neil Mullarkey", "Kathy Greenwood", "Brad Sherwood", "Chip Esten", "Jeff Davis", "Tina Fey", "Amy Poehler", "Jonathan Mangum", "Mark Meer", "Larry David", "Scott Aukerman", "Horatio Sanz", "Lauren Lapkus"]
+            "comedians": ["Brian Posehn", "Rory Scovel", "Robin Williams", "Jonathan Winters", "Bob Nelson", "Paula Poundstone", "Paul Merton", "Tony Slattery", "Josie Lawrence", "Jim Sweeney", "Steve Steen", "Wayne Brady", "Ryan Stiles", "Colin Mochrie", "Drew Carey", "Greg Proops", "John Sessions", "Neil Mullarkey", "Kathy Greenwood", "Brad Sherwood", "Chip Esten", "Jeff Davis", "Tina Fey", "Amy Poehler", "Jonathan Mangum", "Mark Meer", "Larry David", "Scott Aukerman", "Horatio Sanz", "Lauren Lapkus"]
         },
         {
             "name": "Insult Comedy",
@@ -42,11 +42,11 @@ var state = {
 
         {
             "name": "Musical Comedy",
-            "comedians": ["Bill Bailey", "Denis Leary", "Tim Minchin", "The Lonely Island", "Flight Of The Conchords", "Les Luthiers", "Mitch Benn", "Tenacious D", "Spinal Tap", "Stephen Lynch", "\"Weird Al\" Yankovic", "Bob Rivers", "Bo Burnham", "Tom Lehrer", "Victor Borge"]
+            "comedians": ["Nick Thune", "Bill Bailey", "Denis Leary", "Tim Minchin", "The Lonely Island", "Flight Of The Conchords", "Les Luthiers", "Mitch Benn", "Tenacious D", "Spinal Tap", "Stephen Lynch", "\"Weird Al\" Yankovic", "Bob Rivers", "Bo Burnham", "Tom Lehrer", "Victor Borge"]
         },
         {
             "name": "Observational comedy",
-            "comedians": ["Gabriel Iglesias", "George Carlin", "Jerry Seinfeld", "Louis C.K.", "Craig Ferguson", "Larry David", "Mitch Hedberg", "Billy Connolly", "Michael McIntyre", "Russell Howard", "Cedric the Entertainer", "Steve Harvey", "W. Kamau Bell", "Ray Romano", "Chris Rush", "Dane Cook", "Chris Rock", "Kathy Greenwood", "Ellen DeGeneres", "Russell Peters"]
+            "comedians": ["Russell Brand", "Eugene Mirman ", "Gabriel Iglesias", "George Carlin", "Jerry Seinfeld", "Louis C.K.", "Craig Ferguson", "Larry David", "Mitch Hedberg", "Billy Connolly", "Michael McIntyre", "Russell Howard", "Cedric the Entertainer", "Steve Harvey", "W. Kamau Bell", "Ray Romano", "Chris Rush", "Dane Cook", "Chris Rock", "Kathy Greenwood", "Ellen DeGeneres", "Russell Peters"]
         },
         {
             "name": "Physical comedy",
@@ -70,7 +70,7 @@ var state = {
         },
         {
             "name": "Satire",
-            "comedians": ["Kevin Hart", "George Carlin", "Bill Hicks", "Chris Morris", "Dennis Miller", "Conan O'Brien", "Russell Howard", "Craig Ferguson", "David Letterman", "Jay Leno", "Dan Harmon", "Andy Hamilton", "Bill Maher", "John Oliver", "Ian Hislop", "Brent Butt", "Paul Merton", "Kathy Griffin", "Jon Stewart", "Stephen Colbert", "Stewart Lee", "Matt Groening", "Rory Bremner", "W. Kamau Bell", "Ben Elton", "David Cross", "Lewis Black", "Chris Rock", "Dave Chappelle", "The Chaser", "Punt and Dennis", "Jon Holmes"
+            "comedians": ["T.J. Miller", "Nick Swardson", "Pete Holmes", "Kevin Hart", "George Carlin", "Bill Hicks", "Chris Morris", "Dennis Miller", "Conan O'Brien", "Russell Howard", "Craig Ferguson", "David Letterman", "Jay Leno", "Dan Harmon", "Andy Hamilton", "Bill Maher", "John Oliver", "Ian Hislop", "Brent Butt", "Paul Merton", "Kathy Griffin", "Jon Stewart", "Stephen Colbert", "Stewart Lee", "Matt Groening", "Rory Bremner", "W. Kamau Bell", "Ben Elton", "David Cross", "Lewis Black", "Chris Rock", "Dave Chappelle", "The Chaser", "Punt and Dennis", "Jon Holmes"
 
             ]
         }
