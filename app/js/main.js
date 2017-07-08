@@ -6,6 +6,7 @@ function getData(comedian) {
         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
         keyword: comedian,
         city: cities,
+        classificationName: "Comedy" 
     }
 
     return Promise.resolve($.getJSON(ticketmasterUrl, options));
@@ -16,7 +17,8 @@ function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
     } else {
-        var nextComedian = state.getComedianPool.shift();
+        state.currentComedianIndex += 1
+        var nextComedian = state.getComedianPool[state.currentComedianIndex];
         getData(nextComedian).then(saveEvents);
     }
     render();
@@ -50,7 +52,6 @@ function onComedianSelected(e, selected) {
     //pool is a pool of comedians 
     state.getComedianPool = [];
     state.getComedianPool.push(selected.item.value)
-    state.getComedianPool.push(state.currentComedian);
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
 
 
@@ -63,9 +64,8 @@ function load() {
 
 function render() {
     if (state.getComedianPool) {
-        $('.searchTerm').val(state.getComedianPool[0]);
-
-        renderRelatedComedians(state.getComedianPool.slice(1));
+        $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
+        renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex+1));
     }
     renderRelatedComedians
     //makes autocomplete possible 
@@ -74,10 +74,12 @@ function render() {
         select: onComedianSelected
     })
     $('#formData').submit(function (e) {
+        const currentComedian = state.getComedianPool[0]; 
+        state.currentComedianIndex = 0;
         $('h1').hide();
         e.preventDefault();
         load();
-        getData(state.getComedianPool.shift()).then(saveEvents);
+        getData(currentComedian).then(saveEvents); 
     });
     if (state.events) {
         state.events.map(renderTemplate);
