@@ -95,5 +95,15 @@
     .column+.column {
         margin-left: 0;
     }
+}
 
+@media (max-width: 500px) {
+    img {
+        width: 34.65em;
+        padding-top: 2em;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2em;
+    }
 }
