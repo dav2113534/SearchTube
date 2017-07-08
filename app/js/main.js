@@ -33,7 +33,7 @@ function complete() {
 }
 
 function sameGenre() {
-    var message = "<p> Here are some recommendations! </p>"
+    var message = "<p class='recom'> Here are some recommendations! </p>"
     return message;
 }
 

@@ -11,15 +11,18 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
 </head>
+<img class="backgroundImg" src="assests/jonathan-andreo-198681.jpg" alt="Mic">
+
 
 <body>
     <header>Local Stand-Up Shows!</header>
-    <h1>Bored?</h1>
-    <h1>How about you search for some stand-up events?</h1>
-    <h1>Because some days you just gotta laugh!</h1>
-
+    <section class="intro">
+        <h1>Bored?</h1>
+        <h1>How about you search for some stand-up events?</h1>
+        <h1>Because some days you just gotta laugh!</h1>
+    </section>
     <form id="formData" class="row">
         <section class='search column column-6'>
             <input type="text" class='searchTerm' autocomplete="on" placeholder='Dave Chappelle, Kevin Hart'>
@@ -39,8 +42,7 @@
         </section>
         <div id='loader'></div>
     </form>
-    <img class="backgroundImg" src="assests/oscar-keys-58399.jpg" alt="Mic">
-    
+
     <script src="app/js/state.js"></script>
     <script src="app/js/main.js"></script>
 

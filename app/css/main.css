@@ -1,33 +1,42 @@
-html{
-  -webkit-transform: translate3d(0,0,0);
+html {
+    -webkit-transform: translate3d(0, 0, 0);
+    background-color: black
 }
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Architect Daughter', cursive;
+.intro{
+    color: goldenrod;
+    font-weight: bold;
+    background-color: black;
+    opacity: .9;
+    border-radius: 1em;
 }
 
-a {
-    color: bisque;
-    cursor: alias;
-}
+.recom, .sameGenre{
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    color: darkgoldenrod;
+    font-weight: inherit;
 
+}
 h1 {
-    color: ghostwhite;
     font-weight: bold;
     text-shadow: black 1px 1px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    Font-Family: 'Oswald', Sans-Serif;
 }
 
 header {
+    Font-Family: 'Quattrocento', Serif;
     background-color: transparent;
     backface-visibility: inherit;
     font-size: 2.8em;
     width: 100%;
-    color: white;
+    color:goldenrod;
     font-weight: bold;
     text-shadow: black 1px 1px;
     text-align: center;
@@ -90,7 +99,7 @@ header {
 }
 
 p {
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
     text-shadow: black 1px 1px;
 }
@@ -121,11 +130,12 @@ p {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 100%; 
+    width: 100%;
     height: 120%;
     background-color: black;
     filter: contrast(120%);
 }
+
 img {
     width: 34.65em;
     padding-top: 2em;
@@ -138,11 +148,12 @@ img {
 a {
     padding-top: 1em;
     text-align: center;
-    color: midnightblue;
-    cursor: pointer; 
+    color: goldenrod;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-footer{
+footer {
     clear: both;
     text-align: center;
 }
