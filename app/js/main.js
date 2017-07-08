@@ -66,7 +66,7 @@ function render() {
     if (state.getComedianPool) {
         $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
         renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex+1));
-    }
+    } 
     renderRelatedComedians
     //makes autocomplete possible 
     $('.searchTerm').autocomplete({
