@@ -99,7 +99,7 @@ function renderMap(x) {
     const coordinates = lat + ',' + long;
     return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
         coordinates +
-        '&zoom=12&size=400x300&sensor=false" style="width: 100%; height: 400px;" />'
+        '&zoom=12&size=400x300&sensor=false" style="width: 100%; height: 100%;" />'
 }
 
 
@@ -115,14 +115,14 @@ function renderVenues(events) {
     return events.map(renderVenue)
 }
 
-function renderDate(x){
-return x.dates.start.localDate; 
+function renderDate(x) {
+    return x.dates.start.localDate;
 }
 
 function renderTemplate(event) {
     $('#loader').hide();
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
-     "Event Date: " + renderDate(event));
+        "Event Date: " + renderDate(event));
     $('.venues')[0].scrollIntoView();
     $('#map').html(renderMap(state.events[0]))
 }
