@@ -5,13 +5,12 @@ I used javascript and used the ticketmaster api for the ticket info.
 
 
 Feedback from users: 
-- Change font style
+- ~~Change font style~~
 - ~~Give more generic about app~~
 - ~~submit button needs to be more modern~~
 - ~~change cursor to pointer~~ 
-- make related comedians clickable (url)
 - ~~replace  searching text with with loading circle~~  
 - add alert message if no results found 
 - ~~have a map information under city search bar~~ 
-- If related comedians clicked add them to the top(remove from comedianpool)and then call render(render will handle the dirty work)
 - ~~Change background to a image instead of a video~~
+- sumbmit is return events that aren't related 
