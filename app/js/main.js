@@ -6,7 +6,10 @@ function getData(comedian) {
         apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
         keyword: comedian,
         city: cities,
-        classificationName: "Comedy" 
+        classificationName: "Comedy",
+        radius: "100",
+        unit: "miles",
+        includeLicensedContent: "yes"
     }
 
     return Promise.resolve($.getJSON(ticketmasterUrl, options));
@@ -113,18 +116,23 @@ function renderVenue(x) {
     return x._embedded.venues[0].name + "<br/>" + " ";
 }
 
+function renderPrices(x){
+    return x.priceRanges[0].min + "<br/>" + " " +
+    "Max Ticket Price: $" + x.priceRanges[0].max; 
+}
+
 function renderVenues(events) {
     return events.map(renderVenue)
 }
 
 function renderDate(x) {
-    return x.dates.start.localDate;
+    return x.dates.start.localDate + "<br/>" + " ";
 }
 
 function renderTemplate(event) {
     $('#loader').hide();
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
-        "Event Date: " + renderDate(event));
+        "Event Date: " + renderDate(event) + "Min Ticket Price: $" + renderPrices(event));
     $('.venues')[0].scrollIntoView();
     $('#map').html(renderMap(state.events[0]))
 }
