@@ -14,7 +14,7 @@ html {
     border-radius: 1em;
 }
 
-.recom, .sameGenre{
+.recom, .sameGenre, .venues{
     background-color: black;
     opacity: .9;
     text-align: center;
@@ -147,7 +147,7 @@ img {
 a {
     padding-top: 1em;
     text-align: center;
-    color: goldenrod;
+    color: white;
     cursor: pointer;
     text-decoration: none;
 }
