@@ -19,12 +19,11 @@ function getData(comedian) {
 function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
-    }
     // } else {
     //     state.currentComedianIndex += 1
     //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
     //     getData(nextComedian).then(saveEvents);
-    // }
+    }
     render();
 }
 //Complete gathers up the arrays 
@@ -57,8 +56,6 @@ function onComedianSelected(e, selected) {
     state.getComedianPool = [];
     state.getComedianPool.push(selected.item.value)
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
-
-
     renderRelatedComedians(relatedComedians);
 }
 
@@ -66,18 +63,15 @@ function load() {
     $('#loader').show();
 }
 
-function render() {
+function noMatch(){
+    if(state.events === undefined) {
+            const noEvents = "<p class='noEvent'>Sorry No Events Found.</p>"
+            $('#loader').hide();
+            $('.venues').html(noEvents);
+        }
+}
 
-    // if (state.getComedianPool) {
-    //     $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
-    //     renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex + 1));
-    // }
-    // renderRelatedComedians
-    //makes autocomplete possible 
-    // $('.searchTerm').autocomplete({
-    //     source: complete(),
-    //     select: onComedianSelected
-    // })
+function render() {
     if ($('.searchTerm').val() !== undefined) {
 
         $('#formData').submit(function (e) {
@@ -90,14 +84,23 @@ function render() {
             // getData(currentComedian).then(saveEvents);
             getData(newComedian).then(saveEvents)
         });
+         $('.searchTerm').autocomplete({
+            source: complete(),
+            select: onComedianSelected
+        })
+        //      if (state.getComedianPool) {
+        //     $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
+        //     renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex + 1));
+        // }
+        // renderRelatedComedians
+        //makes autocomplete possible 
+        
         if (state.events) {
             state.events.map(renderTemplate);
-        }
+        } 
         else{
-        const noEvents = "<p>Sorry No Events Found.</p>"
-        $('#loader').hide();
-        return $('.venues').html(noEvents)
-    }
+            noMatch(); 
+        }
     }
 }
 
@@ -116,7 +119,7 @@ function renderMap(x) {
     const coordinates = lat + ',' + long;
     return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
         coordinates +
-        '&zoom=12&size=400x300&sensor=false" >'
+        '&zoom=13&size=400x300&sensor=false" >'
 }
 
 
