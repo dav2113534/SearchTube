@@ -93,6 +93,11 @@ function render() {
         if (state.events) {
             state.events.map(renderTemplate);
         }
+        else{
+        const noEvents = "<p>Sorry No Events Found.</p>"
+        $('#loader').hide();
+        return $('.venues').html(noEvents)
+    }
     }
 }
 
