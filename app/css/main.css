@@ -132,6 +132,7 @@ p {
     height: 120%;
     background-color: black;
     filter: contrast(120%);
+    background-size: cover; 
 }
 
 img {

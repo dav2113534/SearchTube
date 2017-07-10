@@ -3,7 +3,7 @@ var ticketmasterUrl = 'https://app.ticketmaster.com/discovery/v2/events'
 function getData(comedian) {
     var cities = $('.cities').val();
     var options = {
-        apikey: '6m1NAjVcdP4FZrAj7JShG7KDuGN6FlAN',
+        apikey: '6RHHrGQF6fP9uLmG6AHEdjhkORlIzKzM',
         keyword: comedian,
         city: cities,
         classificationName: "Comedy",
