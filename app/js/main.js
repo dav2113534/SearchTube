@@ -19,11 +19,12 @@ function getData(comedian) {
 function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
-    } else {
-        state.currentComedianIndex += 1
-        var nextComedian = state.getComedianPool[state.currentComedianIndex];
-        getData(nextComedian).then(saveEvents);
     }
+    // } else {
+    //     state.currentComedianIndex += 1
+    //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
+    //     getData(nextComedian).then(saveEvents);
+    // }
     render();
 }
 //Complete gathers up the arrays 
@@ -66,26 +67,32 @@ function load() {
 }
 
 function render() {
-    if (state.getComedianPool) {
-        $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
-        renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex+1));
-    } 
-    renderRelatedComedians
+
+    // if (state.getComedianPool) {
+    //     $('.searchTerm').val(state.getComedianPool[state.currentComedianIndex]);
+    //     renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex + 1));
+    // }
+    // renderRelatedComedians
     //makes autocomplete possible 
-    $('.searchTerm').autocomplete({
-        source: complete(),
-        select: onComedianSelected
-    })
-    $('#formData').submit(function (e) {
-        const currentComedian = state.getComedianPool[0]; 
-        state.currentComedianIndex = 0;
-        $('h1').hide();
-        e.preventDefault();
-        load();
-        getData(currentComedian).then(saveEvents); 
-    });
-    if (state.events) {
-        state.events.map(renderTemplate);
+    // $('.searchTerm').autocomplete({
+    //     source: complete(),
+    //     select: onComedianSelected
+    // })
+    if ($('.searchTerm').val() !== undefined) {
+
+        $('#formData').submit(function (e) {
+            const newComedian = $('.searchTerm').val();
+            // const currentComedian = state.getComedianPool[0];
+            // state.currentComedianIndex = 0;
+            $('h1').hide();
+            e.preventDefault();
+            load();
+            // getData(currentComedian).then(saveEvents);
+            getData(newComedian).then(saveEvents)
+        });
+        if (state.events) {
+            state.events.map(renderTemplate);
+        }
     }
 }
 
@@ -116,9 +123,9 @@ function renderVenue(x) {
     return x._embedded.venues[0].name + "<br/>" + " ";
 }
 
-function renderPrices(x){
+function renderPrices(x) {
     return x.priceRanges[0].min + "<br/>" + " " +
-    "Max Ticket Price: $" + x.priceRanges[0].max; 
+        "Max Ticket Price: $" + x.priceRanges[0].max;
 }
 
 function renderVenues(events) {
