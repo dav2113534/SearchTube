@@ -6,7 +6,7 @@ html {
     box-sizing: border-box;
 }
 
-.intro{
+.intro {
     color: goldenrod;
     font-weight: bold;
     background-color: black;
@@ -14,14 +14,16 @@ html {
     border-radius: 1em;
 }
 
-.recom, .sameGenre, .venues{
+.recom,
+.sameGenre,
+.venues {
     background-color: black;
     opacity: .9;
     text-align: center;
     color: darkgoldenrod;
     font-weight: inherit;
-
 }
+
 h1 {
     font-weight: bold;
     text-shadow: black 1px 1px;
@@ -35,7 +37,7 @@ header {
     backface-visibility: inherit;
     font-size: 2.8em;
     width: 100%;
-    color:goldenrod;
+    color: goldenrod;
     font-weight: bold;
     text-shadow: black 1px 1px;
     text-align: center;
@@ -132,12 +134,12 @@ p {
     height: 120%;
     background-color: black;
     filter: contrast(120%);
-    background-size: cover; 
+    background-size: cover;
 }
 
 img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     padding-top: 2em;
     display: block;
     margin-right: auto;

@@ -19,10 +19,10 @@ function getData(comedian) {
 function saveEvents(data) {
     if (data["_embedded"]) {
         state.events = data["_embedded"].events;
-    // } else {
-    //     state.currentComedianIndex += 1
-    //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
-    //     getData(nextComedian).then(saveEvents);
+        // } else {
+        //     state.currentComedianIndex += 1
+        //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
+        //     getData(nextComedian).then(saveEvents);
     }
     render();
 }
@@ -63,12 +63,12 @@ function load() {
     $('#loader').show();
 }
 
-function noMatch(){
-    if(state.events === undefined) {
-            const noEvents = "<p class='noEvent'>Sorry No Events Found.</p>"
-            $('#loader').hide();
-            $('.venues').html(noEvents);
-        }
+function noMatch() {
+    if (state.events === undefined) {
+        const noEvents = "<p class='noEvent'>Sorry No Events At The Moment.</p>"
+        $('#loader').hide();
+        $('.venues').html(noEvents);
+    }
 }
 
 function render() {
@@ -84,7 +84,7 @@ function render() {
             // getData(currentComedian).then(saveEvents);
             getData(newComedian).then(saveEvents)
         });
-         $('.searchTerm').autocomplete({
+        $('.searchTerm').autocomplete({
             source: complete(),
             select: onComedianSelected
         })
@@ -94,12 +94,11 @@ function render() {
         // }
         // renderRelatedComedians
         //makes autocomplete possible 
-        
+
         if (state.events) {
             state.events.map(renderTemplate);
-        } 
-        else{
-            noMatch(); 
+        } else {
+            noMatch();
         }
     }
 }
