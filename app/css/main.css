@@ -6,17 +6,18 @@ html {
     box-sizing: border-box;
 }
 
-.intro {
+.intro,
+.venues {
     color: goldenrod;
     font-weight: bold;
     background-color: black;
     opacity: .9;
     border-radius: 1em;
+    font-size: 1.5em; 
 }
 
 .recom,
 .sameGenre,
-.venues,
 label {
     background-color: black;
     opacity: .9;
