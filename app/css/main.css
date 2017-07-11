@@ -16,7 +16,8 @@ html {
 
 .recom,
 .sameGenre,
-.venues {
+.venues,
+label {
     background-color: black;
     opacity: .9;
     text-align: center;
