@@ -118,7 +118,7 @@ function renderMap(x) {
     const coordinates = lat + ',' + long;
     return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
         coordinates +
-        '&zoom=13&size=400x300&sensor=false" >'
+        '&zoom=13&size=400x300&sensor=false &key=AIzaSyC5wKcWbAffP0NDENS6YxZlWrZyzcF5GnM" >'
 }
 
 
