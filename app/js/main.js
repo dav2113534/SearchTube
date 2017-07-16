@@ -101,7 +101,7 @@ function render() {
         }
     }
     if ($('.searchTerm').val() === undefined) {
-        return noMatch();`
+        return noMatch();
     }
 }
 
