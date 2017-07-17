@@ -7,9 +7,8 @@ function getData(comedian) {
         keyword: comedian,
         city: cities,
         classificationName: "Comedy",
-        radius: "100",
-        unit: "miles",
-        includeLicensedContent: "yes"
+        radius: "",
+        unit: "",
     }
 
     return Promise.resolve($.getJSON(ticketmasterUrl, options));
@@ -23,6 +22,9 @@ function saveEvents(data) {
         //     state.currentComedianIndex += 1
         //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
         //     getData(nextComedian).then(saveEvents);
+    }
+    else{
+        noMatch();
     }
     render();
 }
@@ -61,16 +63,15 @@ function onComedianSelected(e, selected) {
 
 function load() {
     $('#loader').show();
-    // if(state.events !== undefined)
 }
 
 function noMatch() {
     if (state.events === undefined) {
-        const noEvents = "<p class='noEvent'>Sorry No Events At The Moment.</p>"
-        // $('#loader').hide();
+        const noEvents = "<p class='noEvent'>Sorry No Events At The Moment, But Check This Event Out!</p>"
         $('.venues').html(noEvents);
-        $('#loader').hide(); 
-        $('.noEvent').show(); 
+        $('#loader').hide();
+        const altSearch = $('.cities').val();
+        getData(altSearch).then(saveEvents)
     }
 }
 
@@ -86,8 +87,8 @@ function render() {
             load();
             // getData(currentComedian).then(saveEvents);
             getData(newComedian).then(saveEvents);
-            $('.noEvent').hide(); 
-            noMatch(); 
+            $('.noEvent').hide();
+            // noMatch();
         });
         $('.searchTerm').autocomplete({
             source: complete(),
@@ -148,8 +149,8 @@ function renderDate(x) {
 
 function renderTemplate(event) {
     $('#loader').hide();
-    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event))
-    // "Event Date: " + renderDate(event) + "Min Ticket Price: $" + renderPrices(event));
+    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
+    "Event Date: " + renderDate(event)) /*+ "Min Ticket Price: $" + renderPrices(event)*/;
     $('.venues')[0].scrollIntoView();
     $('#map').html(renderMap(state.events[0]))
 }
