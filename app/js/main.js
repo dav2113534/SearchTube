@@ -65,10 +65,12 @@ function load() {
 }
 
 function noMatch() {
-    if (state.events !== undefined) {
+    if (state.events === undefined) {
         const noEvents = "<p class='noEvent'>Sorry No Events At The Moment.</p>"
         // $('#loader').hide();
         $('.venues').html(noEvents);
+        $('#loader').hide(); 
+        $('.noEvent').show(); 
     }
 }
 
@@ -84,6 +86,8 @@ function render() {
             load();
             // getData(currentComedian).then(saveEvents);
             getData(newComedian).then(saveEvents);
+            $('.noEvent').hide(); 
+            noMatch(); 
         });
         $('.searchTerm').autocomplete({
             source: complete(),
@@ -99,9 +103,6 @@ function render() {
             state.events.map(renderTemplate);
             $('#loader').hide();
         }
-    }
-    if ($('.searchTerm').val() === undefined) {
-        return noMatch();
     }
 }
 
