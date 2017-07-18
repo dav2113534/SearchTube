@@ -7,8 +7,8 @@ function getData(comedian) {
         keyword: comedian,
         city: cities,
         classificationName: "Comedy",
-        radius: "",
-        unit: "",
+        radius: "40",
+        unit: "miles",
     }
 
     return Promise.resolve($.getJSON(ticketmasterUrl, options));
@@ -22,8 +22,7 @@ function saveEvents(data) {
         //     state.currentComedianIndex += 1
         //     var nextComedian = state.getComedianPool[state.currentComedianIndex];
         //     getData(nextComedian).then(saveEvents);
-    }
-    else{
+    } else {
         noMatch();
     }
     render();
@@ -45,11 +44,15 @@ function sameGenre() {
 }
 
 function renderRelatedComedians(comedians) {
-    comedians = comedians.join(", ")
-        .split("  ");
+    comedians = comedians.map(function (x, index) {
+        return `<a data-index=${index} href=#> ${x} </a>`;
+
+    }).join(", ")
+    //e.target
+    // comedians = comedians.join(", ")
+    //     .split("  ");
     $('.sameGenre').html(comedians);
     $('.description').html(sameGenre);
-
 }
 
 function onComedianSelected(e, selected) {
@@ -80,15 +83,11 @@ function render() {
 
         $('#formData').submit(function (e) {
             const newComedian = $('.searchTerm').val();
-            // const currentComedian = state.getComedianPool[0];
-            // state.currentComedianIndex = 0;
             $('h1').hide();
             e.preventDefault();
             load();
-            // getData(currentComedian).then(saveEvents);
             getData(newComedian).then(saveEvents);
             $('.noEvent').hide();
-            // noMatch();
         });
         $('.searchTerm').autocomplete({
             source: complete(),
@@ -99,10 +98,8 @@ function render() {
         //     renderRelatedComedians(state.getComedianPool.slice(state.currentComedianIndex + 1));
         // }
         // renderRelatedComedians
-        //makes autocomplete possible 
         if (state.events) {
             state.events.map(renderTemplate);
-            $('#loader').hide();
         }
     }
 }
@@ -150,7 +147,7 @@ function renderDate(x) {
 function renderTemplate(event) {
     $('#loader').hide();
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
-    "Event Date: " + renderDate(event)) /*+ "Min Ticket Price: $" + renderPrices(event)*/;
+        "Event Date: " + renderDate(event)) /*+ "Min Ticket Price: $" + renderPrices(event)*/ ;
     $('.venues')[0].scrollIntoView();
     $('#map').html(renderMap(state.events[0]))
 }

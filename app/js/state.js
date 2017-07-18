@@ -75,7 +75,7 @@ var state = {
             ]
         }
     ],
-    /* 
+    /* localhost:3000
 This should list comics that are in the same genres as 
 the one selected in the search bar 
 */
