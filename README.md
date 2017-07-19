@@ -13,3 +13,6 @@ Feedback from users:
 - ~~have a map information under city search bar~~ 
 - ~~Change background to a image instead of a video~~
 - ~~sumbmit is return events that aren't related~~ 
+-   Make map interactable 
+-   Work
+-   List related comedians vertically and limit to 5
