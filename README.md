@@ -14,5 +14,4 @@ Feedback from users:
 - ~~Change background to a image instead of a video~~
 - ~~sumbmit is return events that aren't related~~ 
 -   Make map interactable 
--   Work
--   List related comedians vertically and limit to 5
+-   Have image of comedy appear when selected
