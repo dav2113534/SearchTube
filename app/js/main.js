@@ -55,6 +55,19 @@ function renderRelatedComedians(comedians) {
     $('.description').html(sameGenre);
 }
 
+function clickMe(comedians) {
+    $('a').click(function () {
+
+    })
+}
+
+function clickComedians() {
+    $('a').click(function(x){
+        console.log(x.findIndex()); 
+    })
+}
+
+
 function onComedianSelected(e, selected) {
     var relatedComedians = state.getRelatedComedians(selected.item.value)
     //pool is a pool of comedians 
