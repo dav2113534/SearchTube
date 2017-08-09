@@ -62,8 +62,8 @@ function clickMe(comedians) {
 }
 
 function clickComedians() {
-    $('a').click(function(x){
-        console.log(x.findIndex()); 
+    $('a').click(function (x) {
+        console.log(x.findIndex());
     })
 }
 
@@ -120,6 +120,7 @@ function render() {
 function renderEvent(x) {
     var url = state.events[0]._embedded.attractions[0].url;
     return x.name.link(url) + "<br/>" + " ";
+    let link = 
 }
 
 function renderCity(x) {
