@@ -148,3 +148,7 @@ footer {
     clear: both;
     text-align: center;
 }
+
+#homePage {
+    margin: auto;
+}
