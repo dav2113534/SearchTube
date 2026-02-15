@@ -120,13 +120,29 @@ function renderCity(x) {
     return x._embedded.venues[0].city.name + "<br/>" + " ";
 }
 
+var leafletMap = null;
+
 function renderMap(x) {
-    const lat = x._embedded.venues[0].location.latitude
-    const long = x._embedded.venues[0].location.longitude
-    const coordinates = lat + ',' + long;
-    return '<img src="https://maps.google.com/maps/api/staticmap?center=' +
-        coordinates +
-        '&zoom=13&size=400x300&sensor=false&markers=color:blue|' + coordinates + '&key=AIzaSyC5wKcWbAffP0NDENS6YxZlWrZyzcF5GnM" >'
+    const lat = parseFloat(x._embedded.venues[0].location.latitude);
+    const lng = parseFloat(x._embedded.venues[0].location.longitude);
+    const venueName = x._embedded.venues[0].name;
+
+    // Remove old map instance if it exists
+    if (leafletMap) {
+        leafletMap.remove();
+    }
+
+    leafletMap = L.map('mapid').setView([lat, lng], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(leafletMap);
+    L.marker([lat, lng]).addTo(leafletMap)
+        .bindPopup(venueName)
+        .openPopup();
+
+    setTimeout(function () {
+        leafletMap.invalidateSize();
+    }, 100);
 }
 
 
@@ -156,7 +172,7 @@ function renderTemplate(event) {
     $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
         "Event Date: " + renderDate(event)) /*+ "Min Ticket Price: $" + renderPrices(event)*/ ;
     $('.venues')[0].scrollIntoView();
-    $('#map').html(renderMap(state.events[0]))
+    renderMap(state.events[0]);
 }
 
 render();

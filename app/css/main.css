@@ -1,5 +1,10 @@
-html {
-    background-color: black
+body {
+    background-image: url('../../assests/nyc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 * {
@@ -10,7 +15,6 @@ html {
 .venues {
     color: goldenrod;
     font-weight: bold;
-    background-color: black;
     opacity: .9;
     border-radius: 1em;
     font-size: 1.5em;
@@ -81,7 +85,13 @@ header {
 }
 
 #mapid {
-    height: 100px;
+    height: 300px;
+    margin-top: 1em;
+}
+
+#mapid img {
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes spin {
@@ -151,4 +161,31 @@ a {
 footer {
     clear: both;
     text-align: center;
+}
+
+#homePage {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#homePage .btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: goldenrod;
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    padding: 15px 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+#homePage .btn:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 0 0 25px rgba(218, 165, 32, 0.6);
+    transform: scale(1.05);
 }

@@ -20,6 +20,14 @@
 </head>
 
 <body>
+    <script>
+        // If the user refreshed this page (instead of navigating from home.html),
+        // send them back to the homepage.
+        var navEntry = performance.getEntriesByType('navigation')[0];
+        if (navEntry && navEntry.type === 'reload') {
+            window.location.replace('home.html');
+        }
+    </script>
     <header class='column-12'>Local Stand-Up Shows!</header>
     <form id="formData" class="row">
         <section class='search column column-6'>
@@ -31,8 +39,6 @@
         <section class="citySect column column-6">
             <label>City</label>
             <input type="text" class="cities" placeholder="New York City">
-            <div id='map'></div>
-            <!-- Leaflet map id -->
             <div id="mapid"></div>
         </section>
         <section class="searchResults row">

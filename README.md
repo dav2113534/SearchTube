@@ -15,3 +15,7 @@ Feedback from users:
 - ~~sumbmit is return events that aren't related~~ 
 -   Make map interactable 
 -   Have image of comedy appear when selected
+
+Programmable Search Engine: <script async src="https://cse.google.com/cse.js?cx=e1ce9a583cfbf45ff">
+</script>
+<div class="gcse-search"></div>
