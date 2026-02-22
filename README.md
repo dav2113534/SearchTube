@@ -13,7 +13,7 @@ Feedback from users:
 - ~~have a map information under city search bar~~ 
 - ~~Change background to a image instead of a video~~
 - ~~sumbmit is return events that aren't related~~ 
--   Make map interactable 
+- ~~Make map interactable~~
 -   Have image of comedy appear when selected
 
 Programmable Search Engine: <script async src="https://cse.google.com/cse.js?cx=e1ce9a583cfbf45ff">

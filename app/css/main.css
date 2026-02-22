@@ -23,7 +23,6 @@ body {
 .recom,
 .sameGenre,
 label {
-    
     opacity: .9;
     text-align: center;
     color: darkgoldenrod;
@@ -148,6 +147,65 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 2em;
+}
+
+.comedian-img {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.ticket-prices {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.price-label {
+    color: goldenrod;
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.price-row {
+    color: whitesmoke;
+    font-size: 1em;
+    margin: 0.1em 0;
+}
+
+.ticket-link {
+    display: inline-block;
+    margin-top: 0.6em;
+    color: goldenrod;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.seatmap {
+    text-align: center;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.seatmap-label {
+    font-size: 1.2em;
+    color: goldenrod;
+    margin-bottom: 0.5em;
+}
+
+.seatmap img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    padding: 0;
+    border: 2px solid goldenrod;
+}
+
+.comedian-img img {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    border-radius: 8px;
+    padding: 0;
 }
 
 a {

@@ -62,13 +62,28 @@ function clickComedians() {
 }
 
 
+function fetchComedianImage(comedianName) {
+    var encoded = encodeURIComponent(comedianName.trim());
+    var url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encoded;
+    $.getJSON(url).then(function (data) {
+        if (data.thumbnail && data.thumbnail.source) {
+            $('.comedian-img').html('<img src="' + data.thumbnail.source + '" alt="' + comedianName + '">');
+        } else {
+            $('.comedian-img').html('');
+        }
+    }).fail(function () {
+        $('.comedian-img').html('');
+    });
+}
+
 function onComedianSelected(e, selected) {
     var relatedComedians = state.getRelatedComedians(selected.item.value)
-    //pool is a pool of comedians 
+    //pool is a pool of comedians
     state.getComedianPool = [];
     state.getComedianPool.push(selected.item.value)
     state.getComedianPool = state.getComedianPool.concat(relatedComedians);
     renderRelatedComedians(relatedComedians);
+    fetchComedianImage(selected.item.value);
 }
 
 function load() {
@@ -106,7 +121,7 @@ function render() {
         // }
         // renderRelatedComedians
         if (state.events) {
-            state.events.map(renderTemplate);
+            renderTemplate(state.events[0]);
         }
     }
 }
@@ -154,10 +169,45 @@ function renderVenue(x) {
     return x._embedded.venues[0].name + "<br/>" + " ";
 }
 
-// function renderPrices(x) {
-//     return x.priceRanges[0].min + "<br/>" + " " +
-//         "Max Ticket Price: $" + x.priceRanges[0].max;
-// }
+function renderPrices(event) {
+    var eventWithPrices = state.events.find(function(e) {
+        return e.priceRanges && e.priceRanges.length > 0;
+    });
+
+    var ticketUrl = event.url || (event._embedded && event._embedded.attractions && event._embedded.attractions[0] && event._embedded.attractions[0].url);
+
+    if (eventWithPrices) {
+        var html = '<p class="price-label">Ticket Prices</p>';
+        eventWithPrices.priceRanges.forEach(function(p) {
+            var type = p.type ? p.type.charAt(0).toUpperCase() + p.type.slice(1) : 'Standard';
+            html += '<p class="price-row">' + type + ': $' + p.min + ' &ndash; $' + p.max + ' ' + (p.currency || 'USD') + '</p>';
+        });
+        if (ticketUrl) {
+            html += '<a class="ticket-link" href="' + ticketUrl + '" target="_blank">Buy Tickets on Ticketmaster</a>';
+        }
+        $('.ticket-prices').html(html);
+    } else if (ticketUrl) {
+        $('.ticket-prices').html('<a class="ticket-link" href="' + ticketUrl + '" target="_blank">View Tickets on Ticketmaster</a>');
+    } else {
+        $('.ticket-prices').html('');
+    }
+}
+
+function renderTicketLimit(x) {
+    if (!x.ticketLimit || !x.ticketLimit.info) return '';
+    return x.ticketLimit.info + '<br/> ';
+}
+
+function renderSeatMap(event) {
+    if (event.seatmap && event.seatmap.staticUrl) {
+        $('.seatmap').html(
+            '<p class="seatmap-label">Venue Seating Map</p>' +
+            '<img src="' + event.seatmap.staticUrl + '" alt="Venue seating map">'
+        );
+    } else {
+        $('.seatmap').html('');
+    }
+}
 
 function renderVenues(events) {
     return events.map(renderVenue)
@@ -168,11 +218,19 @@ function renderDate(x) {
 }
 
 function renderTemplate(event) {
+    console.log('Event data:', event);
     $('#loader').hide();
-    $('.venues').html("Event Name: " + renderEvent(event) + "Venue: " + renderVenue(event) + " City: " + renderCity(event) +
-        "Event Date: " + renderDate(event)) /*+ "Min Ticket Price: $" + renderPrices(event)*/ ;
+    $('.venues').html(
+        "Event Name: " + renderEvent(event) +
+        "Venue: " + renderVenue(event) +
+        "City: " + renderCity(event) +
+        "Date: " + renderDate(event) +
+        renderTicketLimit(event)
+    );
+    renderPrices(event);
     $('.venues')[0].scrollIntoView();
     renderMap(state.events[0]);
+    renderSeatMap(event);
 }
 
 render();
